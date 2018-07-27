@@ -1,8 +1,10 @@
 ## Work
 
-### 2018
+### company
 
-[**lte evennt**](http://www.upluslte.co.kr/site/lteme)
+#### 2018
+
+<del>[**lte event**](http://www.upluslte.co.kr/site/lteme)</del>
 
 ````
 - 사용언어: html, css, javascript, jquery
@@ -18,7 +20,7 @@
     - static 이벤트 페이지
 ````
 
-[**외국인 프로모션**](https://lguplus-event.pentacle.co.kr/global_store)
+<del>[**외국인 프로모션**](https://lguplus-event.pentacle.co.kr/global_store)</del>
 
 ````
 - 사용언어: html, css, javascript, jquery
@@ -31,7 +33,7 @@
       json으로 만들어 이슈 해결
 ````
 
-### 2017
+#### 2017
 
 [**킨더 초콜릿 스포츠**](https://www.kinderchocolate.co.kr/Event/KDS1)
 ````
@@ -142,7 +144,7 @@
     - static event page
 ````
 
-[**본죽**](http://bonjuk.pentacle.co.kr/event/present)
+<del>[**본죽**](http://bonjuk.pentacle.co.kr/event/present)</del>
 
 ````
 - 사용언어: html, css, javascript, jquery
@@ -151,7 +153,7 @@
     - 어버이날 이벤트
 ````
 
-[**네스카페 크래마**](http://www.nescafe-crema.co.kr/)
+<del>[**네스카페 크래마**](http://www.nescafe-crema.co.kr/)</del>
 
 ````
 - 사용언어: html, css, javascript, jquery
@@ -183,7 +185,7 @@
     - static event page
 ````
 
-### 2016
+#### 2016
 
 [**크리스 마스 이벤트**](https://www.kinderjoy.co.kr/event/2015-christmas)
 
@@ -225,4 +227,45 @@
     - 달걀모양의 이미지가 클릭시 열리는 모션 (스프라이트 이미지를 이용하여 frame animation 으로 구현)
     - 대부분의 모션은 css3로 구현 class toggle이나 javascript 모션은 
       IIFE패턴으로 각각의 모션을 scope화 함
+````
+
+### 개인 프로젝트
+
+**newsletter generator**
+[github](https://github.com/fireworks80/newsletter/tree/master)
+[link](http://fireworks80.dothome.co.kr/newsLetter/)
+
+````
+- 사용언어: html, css, javascript, php
+- 설명:
+    - 클라이언트 뉴스레터 페이지 제작을 효율적으로 하기위해 이미지의 갯수,
+      이미지 확장자 선택 후 미리보기로 뉴스레터 페이지 레이어 생성
+    - 레이어의 이미지 선택 시 이미지의 바로가기 링크 삽입 가능
+    - 링크 삽입 후 최종본의 html파일 생성 됨  
+````
+
+[**제노덤**](http://www.genoderm.net/)
+
+````
+- 사용언어: html, css, javascript, php
+- 설명:
+    - 그누보드를 사용하여 제작한 사이트
+````
+
+### 번역
+
+[**css 설계 교과서**](https://github.com/fireworks80/css-japan-book-translate)
+````
+- css 모듈에 관한 책을 찾는데 국내에는 찾을 수 없어 일본 원서 구매 
+- 현재도 변역 중 (발번역에 주의)
+````
+
+### Today I Learned
+
+[Git](https://github.com/fireworks80/TIL/tree/master/Git)
+[css](https://github.com/fireworks80/TIL/tree/master/css)
+[javascript](https://github.com/fireworks80/TIL/tree/master/javascript)
+
+````
+- 매일 조금씩 이라도 공부하여 정리내용을 올림
 ````
