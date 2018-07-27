@@ -262,9 +262,9 @@
 
 ### Today I Learned
 
-[Git](https://github.com/fireworks80/TIL/tree/master/Git)
-[css](https://github.com/fireworks80/TIL/tree/master/css)
-[javascript](https://github.com/fireworks80/TIL/tree/master/javascript)
+- [Git](https://github.com/fireworks80/TIL/tree/master/Git)
+- [css](https://github.com/fireworks80/TIL/tree/master/css)
+- [javascript](https://github.com/fireworks80/TIL/tree/master/javascript)
 
 ````
 - 매일 조금씩 이라도 공부하여 정리내용을 올림
