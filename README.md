@@ -232,8 +232,8 @@
 ### 개인 프로젝트
 
 **newsletter generator**
-[github](https://github.com/fireworks80/newsletter/tree/master)
-[link](http://fireworks80.dothome.co.kr/newsLetter/)
+- [github](https://github.com/fireworks80/newsletter/tree/master)
+- [link](http://fireworks80.dothome.co.kr/newsLetter/)
 
 ````
 - 사용언어: html, css, javascript, php
