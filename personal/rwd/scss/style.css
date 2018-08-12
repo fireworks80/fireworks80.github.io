@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'aileronbold';
+  src: url("../font/aileron-bold-webfont.eot");
+  src: url("../font/aileron-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../font/aileron-bold-webfont.woff") format("woff"), url("../font/aileron-bold-webfont.ttf") format("truetype"), url("../font/aileron-bold-webfont.svg#aileronbold") format("svg");
+  font-weight: normal;
+  font-style: norma;
+}
+
+@font-face {
+  font-family: 'aileronlight';
+  src: url("../font/aileron-light-webfont.eot");
+  src: url("../font/aileron-light-webfont.eot?#iefix") format("embedded-opentype"), url("../font/aileron-light-webfont.woff") format("woff"), url("../font/aileron-light-webfont.ttf") format("truetype"), url("../font/aileron-light-webfont.svg#aileronbold") format("svg");
+  font-weight: normal;
+  font-style: norma;
+}
+
+@font-face {
+  font-family: 'aileronregular';
+  src: url("../font/aileron-reqular-webfont.eot");
+  src: url("../font/aileron-reqular-webfont.eot?#iefix") format("embedded-opentype"), url("../font/aileron-reqular-webfont.woff") format("woff"), url("../font/aileron-reqular-webfont.ttf") format("truetype"), url("../font/aileron-reqular-webfont.svg#aileronbold") format("svg");
+  font-weight: normal;
+  font-style: norma;
+}
+
+.visual {
+  outline: 1px dashed red;
+}
+
+.a11y-hidden {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(0 0 0 0);
+}

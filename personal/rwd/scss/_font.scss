@@ -1,0 +1,37 @@
+$loc: '../font/' !default;
+$font-bold: 'aileron-bold-webfont';
+$font-light: 'aileron-light-webfont';
+$font-regular: 'aileron-reqular-webfont';
+
+@font-face {
+  font-family: 'aileronbold';
+  src: url($loc + $font-bold + '.eot');
+  src: url($loc + $font-bold + '.eot?#iefix') format('embedded-opentype'),
+       url($loc + $font-bold + '.woff') format('woff'), 
+       url($loc + $font-bold + '.ttf') format('truetype'), 
+       url($loc + $font-bold + '.svg#aileronbold') format('svg');
+  font-weight: normal;
+  font-style: norma;
+}
+
+@font-face {
+  font-family: 'aileronlight';
+  src: url($loc + $font-light + '.eot');
+  src: url($loc + $font-light + '.eot?#iefix') format('embedded-opentype'),
+       url($loc + $font-light + '.woff') format('woff'), 
+       url($loc + $font-light + '.ttf') format('truetype'), 
+       url($loc + $font-light + '.svg#aileronbold') format('svg');
+  font-weight: normal;
+  font-style: norma;
+}
+
+@font-face {
+  font-family: 'aileronregular';
+  src: url($loc + $font-regular + '.eot');
+  src: url($loc + $font-regular + '.eot?#iefix') format('embedded-opentype'),
+       url($loc + $font-regular + '.woff') format('woff'), 
+       url($loc + $font-regular + '.ttf') format('truetype'), 
+       url($loc + $font-regular + '.svg#aileronbold') format('svg');
+  font-weight: normal;
+  font-style: norma;
+}
