@@ -1,3 +1,57 @@
+$loc: '../images/';
+$bp-m: 750px;
+$bp-t: 1024px;
+$bp-d: 1920px;
+
+
 .visual {
     @include debugger;
+    @include background($loc + 'img-visual.jpg');
+    @include size(null, 779px);
+
+    @media(min-width: $bp-m + 1) {
+        background: red;
+    }
+    display: flex;
+    flex-direction: column;    
+
+    &__txt {
+        @include debugger;                
+        margin-left: percentage(88px / $bp-m);
+        color: #fff;
+        font-size: 68px;
+        font-family: 'aileronregular', sans-serif;
+        
+        .ico--arrow {
+            margin-left: percentage(25px / 574px);
+            margin-top: 24px;
+        }
+    }
+}
+
+.gnb {
+    @include debugger;    
+    @include size(100%, null);
+    padding: 27px percentage(32px / $bp-m) 0 percentage(29px / $bp-m); 
+    margin-bottom: 209px;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {
+    @include background($loc + 'logo-white.png');
+    @include size(24px, 34px);
+    display: inline-block;
+}
+
+.hamburger {
+    @include background($loc + 'btn-hamburger.png');
+    @include size(30px, 23px);
+    display: inline-block;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+
 }
