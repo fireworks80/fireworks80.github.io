@@ -4,6 +4,18 @@
 
 #### 2018
 
+[**U+ 이벤트**](/personal/portfolio/Uplus-reservation/)
+- [source](https://github.com/fireworks80/fireworks80.github.io/tree/master/personal/portfolio/Uplus-reservation)
+
+````
+- 사용언어: html, css, javascript, Vue(CDN)
+- Plugin: clipboard, jquery,
+- Api: swagger 
+- 설명: 
+    - 사용자 정보 입력, 매장찾기 시 주소 검색명으로 해당 검색명에 관련된 내용으로 리스트 다시 보여주기
+    - clipboard library를 Vue안에 넣어 이벤트로 호출 수 클릭 수대로 clipboard가 생성되어 Vue외부로 뺌
+````
+
 [**샘소나이트 이벤트 카운트다운 효과 작업**](/personal/portfolio/countdown/)
 - [source](https://github.com/fireworks80/fireworks80.github.io/tree/master/personal/portfolio/countdown)
 
