@@ -1,0 +1,468 @@
+$width-pop: 720px;
+.dim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  width: $width-pop;
+  padding-bottom: 60px;
+  background-color: #fff;
+
+  &__tit {
+    margin-bottom: 40px;
+  }
+  &__con {
+    margin-bottom: 60px;
+    &-txt {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  }
+  .btn--close-white,
+  .btn--close-black {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+// 개인정보 이용 약관
+// ========================================
+.popup--agree {
+  .popup__con {
+    text-align: initial;
+    padding-left: 40px;
+  }
+}
+
+// 매장 찾기
+// ========================================
+.popup--find-store {
+  .field--store {
+    text-align: initial;
+    margin-top: 1px;
+    margin-bottom: 60px;
+  }
+  .btn--search {
+    position: absolute;
+    top: 1px;
+    right: 0;
+  }
+}
+
+.store-list {
+  font-size: 20px;
+
+  .col-name {
+    width: 133px;
+  }
+
+  .col-addr {
+    width: 314px;
+  }
+  .col-map {
+    width: 75px;
+  }
+  th {
+    padding: 18px 0 17px;
+    background-color: #f2f2f2;
+    &:last-child {
+      padding-left: 19px;
+      text-align: initial;
+    }
+  } // th
+  &__tit {
+    @include debugger;
+    @include background-image($loc + "popup/store-list-tit.png");
+    display: inline-block;
+    height: 22px;
+    text-indent: -9999em;
+    &--name {
+      width: 62px;
+      background-position: left top;
+    }
+    &--addr {
+      margin-left: -1px;
+      width: 89px;
+      background-position: -209px top;
+    }
+    &--map {
+      margin-left: 7px;
+      width: 41px;
+      background-position: right top;
+    }
+  }
+  td {
+    border: solid #eaeaea;
+    border-width: 0 0 1px 1px;
+    &:first-child {
+      border-left-width: 0;
+    }
+  } // td
+  .cell-addr {
+    padding: 15px 10px 15px 25px;
+    text-align: left;
+  }
+}
+
+// 개인 정보
+// ========================================
+.popup--user-info {
+  .popup__con {
+    margin-bottom: 45px;
+
+    &-txt {
+      text-align: center;
+    }
+  }
+
+  .field {
+    margin-bottom: 20px;
+    text-align: initial;
+
+    &--verification {
+      margin-left: 120px;
+    }
+
+    &--phone {
+      margin-bottom: 30px;
+    }
+
+    &--lst {
+      margin-bottom: 60px;
+    }
+
+    .btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .field__txt--small {
+    float: left;
+  }
+
+  .field__select {
+    height: 80px;
+    width: 520px;
+  }
+
+  .verification-time {
+    position: absolute;
+    right: 68px;
+    top: -25px;
+    font-size: 21px;
+    color: #acacac;
+  }
+  .txt-find-store {
+    margin-bottom: 25px;
+  }
+
+  .field--store {
+    margin-bottom: 45px;
+  }
+
+  .field--agree {
+    [type="checkbox"] {
+      position: absolute;
+      left: 0;
+      z-index: -1;
+
+      &:checked + label {
+        background-position: left bottom;
+      }
+    }
+
+    .btn--detail {
+      top: -6px;
+    }
+  } // aGREE
+}
+
+.lb {
+  @include debugger;
+  @include background-image($loc + "popup/ir-label.png");
+  display: inline-block;
+  width: 120px;
+  height: 80px;
+  float: left;
+  &--name {
+    background-position: left 27px;
+  }
+  &--phone {
+    background-position: left -85px;
+  }
+  &--carrier {
+    background-position: left -199px;
+  }
+  &--use-phone {
+    background-position: left -311px;
+  }
+  &--use-period {
+    background-position: left -426px;
+  }
+  &--agree {
+    @include background-image($loc + "popup/checkbox.png");
+    width: 427px;
+    height: 50px;
+  }
+}
+
+// popup quiz
+//======================================
+.popup--quiz {
+  padding-bottom: initial;
+  text-align: center;
+  .popup__con {
+    @include debugger;
+    @include background-image($loc + 'bg-gift-btm.png', $pos: center bottom);
+    padding-bottom: 110px;
+    margin-bottom: initial;
+  }
+}
+
+.quiz-con,
+.quiz-result
+.result__gift,
+.question {
+  display: none;
+}
+
+// quiz con common
+// =================================================
+.quiz-con {
+
+  .question__tit {
+    @include debugger;
+    @include background-image($loc + 'ir-question.png', $pos: left top);
+      display: block;
+      margin-bottom: 39px;
+      height: 32px;
+      width: 100%;
+  
+    &1 {
+      background-position: left top;
+    }
+
+    &2 {
+      background-position: left -32px;
+    }
+
+    &3 {
+      height: 25px;
+      background-position: left bottom;      
+    }
+  } // tit
+
+  [type="radio"] {
+    position: absolute;
+    z-index: -1;
+    width: 1px;
+    height: 1px;            
+    clip: rect(0 0 0 0);
+
+    &:checked + .question__lb::after {
+      @include background-image($loc + 'ico-check.png');
+      position: absolute;
+      width: 38px;
+      height: 30px;  
+      content: '';
+    }  
+  }  
+
+  .question__lb {
+    @include debugger;
+    @include background-image($loc + 'ir-label.png');
+    position: relative;
+    display: inline-block;    
+    cursor: pointer;
+    
+    &::before {
+      display: inline-block;      
+      vertical-align: top;
+      content: '';
+    }    
+
+    &1 {
+      background-position: left top;
+    }
+
+    &2 {
+      background-position: left -104px;
+    }
+    &3 {
+      background-position: left -211px;
+    }
+
+    &4 {
+      background-position: -164px top;
+    }
+    &5 {
+      background-position: -164px -105px;
+    }
+    &6 {
+      background-position: -164px -211px;
+    }
+    &7 {
+      background-position: left -288px;
+    }
+    &8 {
+      background-position: -290px -288px;
+    }
+    &9 {
+      background-position: left -358px;
+    }
+    &10 {
+      background-position: -291px -358px;
+    }
+  }
+
+  .btn--reset {
+    margin-right: 16px;
+  }
+}
+
+// question
+// ===================================
+.question {
+  @include debugger;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: $width-form;
+  text-align: initial;  
+
+  &__list {
+    @include debugger;
+
+    li {      
+      padding: 18px 0 18px 90px;
+      margin-bottom: 60px;
+      border: 2px solid #dbdce0;
+      border-radius: 30px;
+      
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-bottom: 25px;
+      }
+    }
+
+    [type="radio"]:checked + .question__lb::after {            
+      left: -54px;
+      top: -3px;          
+    }
+
+    .question__lb {      
+      height: 27px;
+      width: 132px;      
+
+      &::before {        
+        margin-left: -60px;
+        margin-top: -6px;
+        width: 40px;
+        height: 40px;
+        border: 5px solid #dbdce0;
+        border-radius: 50%;        
+      }      
+    }
+  }
+}
+
+
+// servay
+// ===================================
+.servay {
+  @include debugger;
+  
+  margin: 0 auto 60px;
+  padding: 30px 37px;
+  width: $width-form;  
+  background-color: #f1f1f3;
+  border-radius: 20px;
+  text-align: initial;
+
+  .question__tit3 {
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    @include debugger;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    li {
+      @include debugger;        
+      flex: 1 0 50%;
+      display: flex;
+      align-items: center;      
+      height: 50px;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-bottom: 20px;
+      }
+    }
+    
+    [type="radio"]:checked + .question__lb::after {            
+      left: -63px;
+      top: -4px;          
+    }
+
+    .question__lb {
+      margin-left: 68px;
+      width: 166px;
+      height: 24px;
+
+      &::before {
+        margin-top: -13px;
+        margin-left: -68px;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #dbdce0;
+        background-color: #fff;
+      }
+    } // lb
+  }  
+}
+
+
+// gift
+// ===================================
+.result__gift {
+  $result-imgs: ('bang', 'note', 'starbugs', 'iconx', '31');
+  
+  @each $name in $result-imgs {
+    &-#{$name} {
+      @include background-image($loc + 'gift-#{$name}.png');
+
+      @if $name == 'bang' {
+        padding-top: 300px;                     
+      } @else {
+        margin-bottom: 59px;
+        height: 549px;
+      }
+    }
+  }
+
+  .btn--retry {
+    margin-bottom: 40px;
+  }
+}
+
+
+.is-active {
+  display: block;
+}

@@ -1,0 +1,84 @@
+// ==================================
+// variable
+// ==================================
+$width-max: 1920px;
+$width-min: 1200px;
+
+.wrap {
+  @include background-image($loc + "bg-pc.png");
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 119px;
+  max-width: $width-max;
+  min-width: $width-min;
+  text-align: center;
+}
+
+.inner {
+  @include debugger;
+  margin-left: auto;
+  margin-right: auto;
+  width: $width-min;
+}
+
+.logo {
+  @include background-image($loc + "logo-pc.png");
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 119px;
+  height: 33px;
+}
+
+.title {
+  @include debugger;
+  @include background-image($loc + "tit-visual-pc.png", $pos: 233px top);
+  margin-bottom: 33px;
+  height: 322px;
+}
+
+.gift {
+  @include debugger;
+  @include background-image($loc + "gift-visual-pc.png");
+  margin-bottom: 16px;
+  height: 613px;
+}
+
+.btn--visit-reservation {
+  margin-bottom: 80px;
+}
+
+.join-way {
+  @include debugger;
+  @include background-image($loc + "steps-pc.png");
+  margin: 0 0 19px 70px;
+  width: 1099px;
+  height: 676px;
+}
+
+.btns-wrap {
+  margin-bottom: 531px;
+}
+
+.btn--share-kakao {
+  margin-left: 1px;
+  margin-right: 14px;
+}
+
+.caution {
+  background-color: #f2f2f2;
+  .inner {
+    @include background-image($loc + "caution-pc.png", $pos: 140px 50px);
+    height: 430px;
+  }
+}
+
+.banner {
+  @include background-image($loc + "banner-pc.png");
+  position: absolute;
+  top: 160px;
+  left: 1710px;
+  width: 160px;
+  height: 230px;
+}

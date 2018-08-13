@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=720">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>퀴즈풀기</title>
+  <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet'
+    type='text/css' />
+  <link rel="stylesheet" href="./css/style-quiz.css">
+</head>
+
+<body>
+  <!-- wrap -->
+  <div class="wrap" id="quiz-app">
+    <!-- certification -->
+    <section class="certification">
+      <header class="a11y-hidden">
+        <span>LG U+</span>
+        <h1>갤럭시 노트9 체험존 퀴즈</h1>
+      </header>
+      <p class="a11y-hidden">영상 속 인증번호를 아래 빈칸에 입력하고 퀴즈를 풀어 주세요!</p>
+      <form class="form">
+        <p class="field">
+          <input class="field__txt" type="text">
+        </p>
+        <button class="btn btn--check-certification" type="button">
+          <span class="a11y-hidden">입력</span>
+        </button>
+
+      </form>
+    </section>
+    <!-- // certification -->
+    <!-- caution -->
+    <div class="caution">
+      <h2 class="a11y-hidden">이벤트 유의사항</h2>
+      <ul class="a11y-hidden">
+        <li>
+          당첨자는 일 1천명으로 제한됩니다.
+        </li>
+        <li>
+          비정상적인 방법으로 참여한 경우, 당첨 후에도 취소될 수 있습니다.
+        </li>
+        <li>
+          개인정보 오기입으로 인해 경품 수령이 불가할 경우, 당사는 책임지지 않습니다.
+        </li>
+        <li>
+          경품은 이벤트 페이지에서 방문 예약하신 매장을 방문해야만 증정되며, 예약하지 않은 매장에 방문할 경우 수령이 불가합니다.
+        </li>
+        <li>
+          이벤트 기간 내에만 경품 수령이 가능하며 경품은 이벤트 참여 시 랜덤으로 증정됩니다.
+        </li>
+        <li>
+          준비된 경품이 모두 소진될 경우 이벤트는 조기 마감될 수 있습니다.
+        </li>
+        <li>
+          상기 경품 이미지와 실제 경품에는 차이가 있을 수 있으며, 내부 사정으로 인해 변경 될 수 있습니다.
+        </li>
+        <li>
+          경품(스타벅스 아메리카노 / 배스킨라빈스 31 파인트)은 방문 예약 시 입력한 연락처로 발송됩니다.
+        </li>
+        <li>
+          배송이 필요한 경품에 당첨 될 경우, 별도 연락을 통해 개인정보를 요청할 수 있습니다.
+        </li>
+        <li>
+          이벤트 참여 및 경품 수령은 1인 1회만 가능하며, 중복 수령 및 대리 수령은 불가합니다.
+        </li>
+        <li>
+          방문 예약한 매장에 방문하여 퀴즈를 참여하여야만 경품 수령이 가능합니다.
+        </li>
+        <li>
+          이벤트 관련 문의 : 연락처 매장 상황에 따라 일요일은 영업을 하지 않을 수 있습니다
+        </li>
+      </ul>
+    </div>
+    <!-- // caution -->
+
+    <!-- popup -->
+    <div class="dim is-active"></div>
+
+    <div class="popup popup--quiz is-active">
+      <h2 class="popup__tit">
+        <img src="/images/quiz/bg-gift-top.png" alt="갤럭시 노트9 체험 존 퀴즈">
+      </h2>
+      <div class="popup__con">
+        <!-- quiz -->
+        <form class="quiz-con is-active">
+          <!-- q1 -->
+          <fieldset class="question is-active">
+            <legend class="question__tit question__tit1">
+              <span class="a11y-hidden">방금 본 영상속 소년의 헤어스타일은?</span>
+            </legend>
+            <ul class="question__list">
+              <li>
+                <input id="answer1" name="hair-style" type="radio">
+                <label class="question__lb question__lb1" for="answer1">
+                  <span class="a11y-hidden">긴생머리</span>
+                </label>
+              </li>
+              <li>
+                <input id="answer2" name="hair-style" type="radio">
+                <label class="question__lb question__lb2" for="answer2">
+                  <span class="a11y-hidden">아프로헤어</span>
+                </label>
+              </li>
+              <li>
+                <input id="answer3" name="hair-style" type="radio">
+                <label class="question__lb question__lb3" for="answer3">
+                  <span class="a11y-hidden">단발머리</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <!-- // q1 -->
+
+          <!-- q2 -->
+          <fieldset class="question is-active">
+            <legend class="question__tit question__tit2">
+              <span class="a11y-hidden">방금 본 영상 속 미국 국기가 걸려있는 쪽은?</span>
+            </legend>
+            <ul class="question__list">
+              <li>
+                <input id="answer4" name="position" type="radio">
+                <label class="question__lb question__lb4" for="answer4">
+                  <span class="a11y-hidden">왼쪽</span>
+                </label>
+              </li>
+              <li>
+                <input id="answer5" name="position" type="radio">
+                <label class="question__lb question__lb5" for="answer5">
+                  <span class="a11y-hidden">가운데</span>
+                </label>
+              </li>
+              <li>
+                <input id="answer6" name="position" type="radio">
+                <label class="question__lb question__lb6" for="answer6">
+                  <span class="a11y-hidden">오른쪽</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <!-- // q2 -->
+
+          <fieldset class="servay">
+            <p class="question__tit question__tit3">
+              <em class="a11y-hidden">어느 경로를 통해 이벤트에 참여하셨나요? (필수)</em>
+            </p>
+            <ul class="servay__list">
+              <li>
+                <input id="online" name="how-to" type="radio">
+                <label class="question__lb question__lb7" for="online">
+                  <span class="a11y-hidden">온라인 광고</span>
+                </label>
+              </li>
+              <li>
+                <input id="text" name="how-to" type="radio">
+                <label class="question__lb question__lb8" for="text">
+                  <span class="a11y-hidden">광고 문자 메시지</span>
+                </label>
+              </li>
+              <li>
+                <input id="advertising" name="how-to" type="radio">
+                <label class="question__lb question__lb9" for="advertising">
+                  <span class="a11y-hidden">매장 직원 안내</span>
+                </label>
+              </li>
+              <li>
+                <input id="other" name="how-to" type="radio">
+                <label class="question__lb question__lb10" for="other">
+                  <span class="a11y-hidden">기타</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button class="btn btn--reset" type="button">
+            <span class="a11y-hidden">닫기</span>
+          </button>
+          <button class="btn btn--submit" type="button">
+            <span class="a11y-hidden">제출하기</span>
+          </button>
+          <button class="btn btn--close-black" type="button">
+            <span class="a11y-hidden">X</span>
+          </button>
+        </form>
+        <!-- // quiz -->
+
+        <!-- result -->
+        <div class="quiz-result">
+          <!-- bang -->
+          <figure class="result__gift result__gift-bang">
+            <figcaption>
+              <p class="a11y-hidden">
+                <span>땡 다시 도전해보세요!</span>
+              </p>
+              <button class="btn btn--retry" type="button">
+                <span class="a11y-hidden">재도전하기</span>
+              </button>
+            </figcaption>
+          </figure>
+
+          <!-- // bang -->
+
+          <!-- note9 -->
+          <figure class="result__gift result__gift-note">
+            <figcaption class="a11y-hidden">
+              정답! 축하합니다. 삼성전자 갤럭시 노트9에 당첨되셨습니다.
+            </figcaption>
+          </figure>
+          <!-- // note9 -->
+
+          <!-- starbugs -->
+          <figure class="result__gift result__gift-starbugs">
+            <figcaption class="a11y-hidden">
+              정답! 축하합니다. 스타벅스 아이스 아메리카노에 당첨되셨습니다.
+            </figcaption>
+          </figure>
+          <!-- // starbugs -->
+
+          <!-- 31 -->
+          <figure class="result__gift result__gift-31">
+            <figcaption class="a11y-hidden">
+              정답! 축하합니다. 배스킨라빈스 31 파인트에 당첨되셨습니다.
+            </figcaption>
+          </figure>
+          <!-- // 31 -->
+
+          <!-- iconx -->
+          <figure class="result__gift result__gift-iconx">
+            <figcaption class="a11y-hidden">
+              정답! 축하합니다. 삼성 기어 아이콘 X에 당첨되셨습니다.
+            </figcaption>
+          </figure>
+          <!-- // iconx -->
+        </div>
+        <!-- // result -->
+        <button class="btn btn--close-black" type="button">
+          <span class="a11y-hidden">X</span>
+        </button>
+      </div>
+    </div>
+    <!-- // popup -->
+  </div>
+  <!-- // wrap -->
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+img,
+span,
+button,
+input,
+select,
+label {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+figure,
+fieldset,
+p,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+fieldset {
+	border: 0;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+body {
+	font-size: 12px;
+	font-family: 'Nanum Barun Gothic', gulim, '맑은고딕', 'Malgun Gothic', sans-serif;
+}

@@ -1,0 +1,67 @@
+// ==================================
+// variable
+// ==================================
+$width-mo: 720px;
+
+.wrap {
+  @include background-image($loc + "bg-mo.png", $pos: center 80px);
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: $width-mo;
+  text-align: center;
+}
+
+.banner {
+  @include background-image($loc + "banner-mo.png");
+  display: block;
+  margin-bottom: 110px;
+  height: 80px;
+}
+
+.logo {
+  @include background-image($loc + "logo-mo.png");
+  position: absolute;
+  left: 21px;
+  top: 101px;
+  width: 108px;
+  height: 30px;
+}
+
+.title {
+  @include debugger;
+  @include background-image($loc + "tit-visual-mo.png");
+  margin-bottom: 28px;
+  height: 377px;
+}
+
+.gift {
+  @include debugger;
+  @include background-image($loc + "gift-viaual-mo.png", $pos: 51px -3px);
+  margin-bottom: 13px;
+  height: 639px;
+}
+
+.btn--visit-reservation {
+  margin-bottom: 70px;
+}
+
+.join-way {
+  @include debugger;
+  @include background-image($loc + "steps-mo.png", $pos: 30px top);
+  margin-bottom: 19px;
+  height: 1144px;
+}
+
+.btns-wrap {
+  margin-bottom: 692px;
+}
+
+.btn--share-kakao {
+  margin-right: 18px;
+}
+
+.caution {
+  @include background-image($loc + "caution-mo.png", $pos: 39px 40px);
+  height: 608px;
+}

@@ -1,0 +1,30 @@
+$width-form: 640px !default;
+.form {
+	@include debugger;
+	margin-left: auto;
+	margin-right: auto;
+	width: $width-form;
+}
+
+.field {
+	@include debugger;
+	position: relative;
+}
+
+.field__txt {
+	padding-left: 30px;
+	padding-right: 20px;
+	height: 80px;
+	border: 1px solid #d1d1d1;
+	border-right-width: 0;
+	font-size: 26px;
+	&--small {
+		width: 330px;
+	}
+	&--middle {
+		width: 520px;
+	}
+	&--large {
+		width: 450px;
+	}
+}

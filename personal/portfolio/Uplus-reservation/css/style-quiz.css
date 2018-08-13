@@ -1,0 +1,1039 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+.a11y-hidden {
+  position: absolute;
+  top: auto;
+  left: -9999em;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+span,
+button,
+input,
+select,
+label {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+figure,
+fieldset,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+fieldset {
+  border: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+body {
+  font-size: 12px;
+  font-family: 'Nanum Barun Gothic', gulim, '맑은고딕', 'Malgun Gothic', sans-serif;
+}
+
+.btn {
+  outline: 1px dashed red;
+  background: url("/images/quiz/ir-btns.png") center top no-repeat;
+  padding: 0;
+  display: inline-block;
+  height: 80px;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn--visit-reservation {
+  width: 360px;
+  background-position: left top;
+  border-radius: 40px;
+}
+
+.btn--share-kakao {
+  width: 300px;
+  background-position: left -182px;
+  border-radius: 40px;
+}
+
+.btn--copy-url {
+  width: 300px;
+  background-position: left -89px;
+  border-radius: 40px;
+}
+
+.btn--close {
+  width: 360px;
+  background-position: left -367px;
+}
+
+.btn--close-white, .btn--close-black {
+  width: 38px;
+  height: 39px;
+}
+
+.btn--close-white {
+  background-position: left -927px;
+}
+
+.btn--close-black {
+  background-position: left -456px;
+}
+
+.btn--location {
+  width: 25px;
+  height: 32px;
+  background-position: -70px -927px;
+}
+
+.btn--selected {
+  width: 67px;
+  height: 37px;
+  background-position: left -480px;
+}
+
+.btn--search {
+  width: 190px;
+  background-position: left -814px;
+}
+
+.btn--detail {
+  width: 190px;
+  height: 61px;
+  background-position: left -538px;
+}
+
+.btn--verification {
+  width: 190px;
+  height: 80px;
+  background-position: left -620px;
+}
+
+.btn--resend {
+  width: 190px;
+  height: 80px;
+  background-position: left -721px;
+}
+
+.btn--ok {
+  width: 360px;
+  background-position: left -274px;
+}
+
+.btn--check-certification {
+  width: 360px;
+  background-position: left -326px;
+}
+
+.btn--retry {
+  width: 360px;
+  background-position: left -217px;
+}
+
+.btn--reset {
+  width: 290px;
+  background-position: left top;
+}
+
+.btn--submit {
+  width: 290px;
+  background-position: left -109px;
+}
+
+.btn.has-shadow {
+  -webkit-box-shadow: 22px 25px 94px -9px rgba(78, 110, 136, 0.6);
+  -moz-box-shadow: 22px 25px 94px -9px rgba(78, 110, 136, 0.6);
+  box-shadow: 22px 25px 94px -9px rgba(78, 110, 136, 0.6);
+}
+
+.form {
+  outline: 1px dashed red;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+
+.field {
+  outline: 1px dashed red;
+  position: relative;
+}
+
+.field__txt {
+  padding-left: 30px;
+  padding-right: 20px;
+  height: 80px;
+  border: 1px solid #d1d1d1;
+  border-right-width: 0;
+  font-size: 26px;
+}
+
+.field__txt--small {
+  width: 330px;
+}
+
+.field__txt--middle {
+  width: 520px;
+}
+
+.field__txt--large {
+  width: 450px;
+}
+
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.wrap {
+  outline: 1px dashed red;
+  margin-left: auto;
+  margin-right: auto;
+  width: 720px;
+}
+
+.certification {
+  background: url("/images/quiz/bg-certification.png") center top no-repeat;
+  padding: 514px 0 80px;
+  text-align: center;
+}
+
+.certification .field {
+  margin-bottom: 60px;
+}
+
+.certification .field__txt {
+  width: 100%;
+}
+
+.caution {
+  background: url("/images/quiz/img-caution.png") center top no-repeat;
+  height: 608px;
+}
+
+.dim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  width: 720px;
+  padding-bottom: 60px;
+  background-color: #fff;
+}
+
+.popup__tit {
+  margin-bottom: 40px;
+}
+
+.popup__con {
+  margin-bottom: 60px;
+}
+
+.popup__con-txt {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.popup .btn--close-white,
+.popup .btn--close-black {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.popup--agree .popup__con {
+  text-align: initial;
+  padding-left: 40px;
+}
+
+.popup--find-store .field--store {
+  text-align: initial;
+  margin-top: 1px;
+  margin-bottom: 60px;
+}
+
+.popup--find-store .btn--search {
+  position: absolute;
+  top: 1px;
+  right: 0;
+}
+
+.store-list {
+  font-size: 20px;
+}
+
+.store-list .col-name {
+  width: 133px;
+}
+
+.store-list .col-addr {
+  width: 314px;
+}
+
+.store-list .col-map {
+  width: 75px;
+}
+
+.store-list th {
+  padding: 18px 0 17px;
+  background-color: #f2f2f2;
+}
+
+.store-list th:last-child {
+  padding-left: 19px;
+  text-align: initial;
+}
+
+.store-list__tit {
+  outline: 1px dashed red;
+  background: url("/images/quiz/popup/store-list-tit.png") center top no-repeat;
+  display: inline-block;
+  height: 22px;
+  text-indent: -9999em;
+}
+
+.store-list__tit--name {
+  width: 62px;
+  background-position: left top;
+}
+
+.store-list__tit--addr {
+  margin-left: -1px;
+  width: 89px;
+  background-position: -209px top;
+}
+
+.store-list__tit--map {
+  margin-left: 7px;
+  width: 41px;
+  background-position: right top;
+}
+
+.store-list td {
+  border: solid #eaeaea;
+  border-width: 0 0 1px 1px;
+}
+
+.store-list td:first-child {
+  border-left-width: 0;
+}
+
+.store-list .cell-addr {
+  padding: 15px 10px 15px 25px;
+  text-align: left;
+}
+
+.popup--user-info .popup__con {
+  margin-bottom: 45px;
+}
+
+.popup--user-info .popup__con-txt {
+  text-align: center;
+}
+
+.popup--user-info .field {
+  margin-bottom: 20px;
+  text-align: initial;
+}
+
+.popup--user-info .field--verification {
+  margin-left: 120px;
+}
+
+.popup--user-info .field--phone {
+  margin-bottom: 30px;
+}
+
+.popup--user-info .field--lst {
+  margin-bottom: 60px;
+}
+
+.popup--user-info .field .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.popup--user-info .field__txt--small {
+  float: left;
+}
+
+.popup--user-info .field__select {
+  height: 80px;
+  width: 520px;
+}
+
+.popup--user-info .verification-time {
+  position: absolute;
+  right: 68px;
+  top: -25px;
+  font-size: 21px;
+  color: #acacac;
+}
+
+.popup--user-info .txt-find-store {
+  margin-bottom: 25px;
+}
+
+.popup--user-info .field--store {
+  margin-bottom: 45px;
+}
+
+.popup--user-info .field--agree [type="checkbox"] {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.popup--user-info .field--agree [type="checkbox"]:checked + label {
+  background-position: left bottom;
+}
+
+.popup--user-info .field--agree .btn--detail {
+  top: -6px;
+}
+
+.lb {
+  outline: 1px dashed red;
+  background: url("/images/quiz/popup/ir-label.png") center top no-repeat;
+  display: inline-block;
+  width: 120px;
+  height: 80px;
+  float: left;
+}
+
+.lb--name {
+  background-position: left 27px;
+}
+
+.lb--phone {
+  background-position: left -85px;
+}
+
+.lb--carrier {
+  background-position: left -199px;
+}
+
+.lb--use-phone {
+  background-position: left -311px;
+}
+
+.lb--use-period {
+  background-position: left -426px;
+}
+
+.lb--agree {
+  background: url("/images/quiz/popup/checkbox.png") center top no-repeat;
+  width: 427px;
+  height: 50px;
+}
+
+.popup--quiz {
+  padding-bottom: initial;
+  text-align: center;
+}
+
+.popup--quiz .popup__con {
+  outline: 1px dashed red;
+  background: url("/images/quiz/bg-gift-btm.png") center bottom no-repeat;
+  padding-bottom: 110px;
+  margin-bottom: initial;
+}
+
+.quiz-con,
+.quiz-result
+.result__gift,
+.question {
+  display: none;
+}
+
+.quiz-con .question__tit {
+  outline: 1px dashed red;
+  background: url("/images/quiz/ir-question.png") left top no-repeat;
+  display: block;
+  margin-bottom: 39px;
+  height: 32px;
+  width: 100%;
+}
+
+.quiz-con .question__tit1 {
+  background-position: left top;
+}
+
+.quiz-con .question__tit2 {
+  background-position: left -32px;
+}
+
+.quiz-con .question__tit3 {
+  height: 25px;
+  background-position: left bottom;
+}
+
+.quiz-con [type="radio"] {
+  position: absolute;
+  z-index: -1;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.quiz-con [type="radio"]:checked + .question__lb::after {
+  background: url("/images/quiz/ico-check.png") center top no-repeat;
+  position: absolute;
+  width: 38px;
+  height: 30px;
+  content: '';
+}
+
+.quiz-con .question__lb {
+  outline: 1px dashed red;
+  background: url("/images/quiz/ir-label.png") center top no-repeat;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.quiz-con .question__lb::before {
+  display: inline-block;
+  vertical-align: top;
+  content: '';
+}
+
+.quiz-con .question__lb1 {
+  background-position: left top;
+}
+
+.quiz-con .question__lb2 {
+  background-position: left -104px;
+}
+
+.quiz-con .question__lb3 {
+  background-position: left -211px;
+}
+
+.quiz-con .question__lb4 {
+  background-position: -164px top;
+}
+
+.quiz-con .question__lb5 {
+  background-position: -164px -105px;
+}
+
+.quiz-con .question__lb6 {
+  background-position: -164px -211px;
+}
+
+.quiz-con .question__lb7 {
+  background-position: left -288px;
+}
+
+.quiz-con .question__lb8 {
+  background-position: -290px -288px;
+}
+
+.quiz-con .question__lb9 {
+  background-position: left -358px;
+}
+
+.quiz-con .question__lb10 {
+  background-position: -291px -358px;
+}
+
+.quiz-con .btn--reset {
+  margin-right: 16px;
+}
+
+.question {
+  outline: 1px dashed red;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  text-align: initial;
+}
+
+.question__list {
+  outline: 1px dashed red;
+}
+
+.question__list li {
+  padding: 18px 0 18px 90px;
+  margin-bottom: 60px;
+  border: 2px solid #dbdce0;
+  border-radius: 30px;
+}
+
+.question__list li:nth-child(1), .question__list li:nth-child(2) {
+  margin-bottom: 25px;
+}
+
+.question__list [type="radio"]:checked + .question__lb::after {
+  left: -54px;
+  top: -3px;
+}
+
+.question__list .question__lb {
+  height: 27px;
+  width: 132px;
+}
+
+.question__list .question__lb::before {
+  margin-left: -60px;
+  margin-top: -6px;
+  width: 40px;
+  height: 40px;
+  border: 5px solid #dbdce0;
+  border-radius: 50%;
+}
+
+.servay {
+  outline: 1px dashed red;
+  margin: 0 auto 60px;
+  padding: 30px 37px;
+  width: 600px;
+  background-color: #f1f1f3;
+  border-radius: 20px;
+  text-align: initial;
+}
+
+.servay .question__tit3 {
+  margin-bottom: 24px;
+}
+
+.servay__list {
+  outline: 1px dashed red;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.servay__list li {
+  outline: 1px dashed red;
+  flex: 1 0 50%;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.servay__list li:nth-child(1), .servay__list li:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.servay__list [type="radio"]:checked + .question__lb::after {
+  left: -63px;
+  top: -4px;
+}
+
+.servay__list .question__lb {
+  margin-left: 68px;
+  width: 166px;
+  height: 24px;
+}
+
+.servay__list .question__lb::before {
+  margin-top: -13px;
+  margin-left: -68px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #dbdce0;
+  background-color: #fff;
+}
+
+.result__gift-bang {
+  background: url("/images/quiz/gift-bang.png") center top no-repeat;
+  padding-top: 300px;
+}
+
+.result__gift-note {
+  background: url("/images/quiz/gift-note.png") center top no-repeat;
+  margin-bottom: 59px;
+  height: 549px;
+}
+
+.result__gift-starbugs {
+  background: url("/images/quiz/gift-starbugs.png") center top no-repeat;
+  margin-bottom: 59px;
+  height: 549px;
+}
+
+.result__gift-iconx {
+  background: url("/images/quiz/gift-iconx.png") center top no-repeat;
+  margin-bottom: 59px;
+  height: 549px;
+}
+
+.result__gift-31 {
+  background: url("/images/quiz/gift-31.png") center top no-repeat;
+  margin-bottom: 59px;
+  height: 549px;
+}
+
+.result__gift .btn--retry {
+  margin-bottom: 40px;
+}
+
+.is-active {
+  display: block;
+}

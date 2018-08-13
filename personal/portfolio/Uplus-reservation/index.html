@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet'
+    type='text/css' />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <h1 class="a11y-hidden">LG U+ 겔럭시 노트 9 체험단 이벤트</h1>
+  <div class="wrap" id="g-note">
+      <div class="inner">
+          <span class="logo">
+      <span class="a11y-hidden">LG U+</span>
+          </span>
+          <div class="title">
+              <h2 class="a11y-hidden">유플러스에서 갤럭시 노트9 체험하고
+                  <em>100% 경품받자!</em>
+              </h2>
+              <p class="a11y-hidden">지금 유플러스 매장에 방문하여 갤럭시 노트9를 직접 체험해보세요! 방문해주시는 모든 분께 선물을 드립니다!</p>
+              <dl class="a11y-hidden">
+                  <dt>이벤트 기간</dt>
+                  <dd>2018.8.14(화) ~ 9.7(금)</dd>
+              </dl>
+          </div>
+          <h3 class="a11y-hidden">경품소개</h3>
+          <strong class="a11y-hidden">일 선착순 1천명</strong>
+          <figure class="gift">
+              <figcaption class="a11y-hidden">
+                  <ul>
+                      <li>삼성전자 갤럭시 노트9</li>
+                      <li>삼성 기어 아이콘 X</li>
+                      <li>스타벅스 아메리카노(Tall)</li>
+                      <li>베스킨라빈스 31 파인트</li>
+                  </ul>
+                  <p>경품 4종 중
+                      <em>랜덤 1종 증정</em>
+                  </p>
+              </figcaption>
+          </figure>
+
+          <button v-on:click="onShowPopup('user-info')" class="btn btn--visit-reservation has-shadow" type="button">
+      <span class="a11y-hidden">방문 예약하기</span>
+    </button>
+
+          <div class="join-way">
+              <h2 class="a11y-hidden">방문하고 싶은 매장을 선택한 후, 해당 매장에서 노트9 체험 미션을 수행해 주세요!</h2>
+              <ol class="a11y-hidden">
+                  <li>
+                      step 1: 가고 싶은 매장 예약하고
+                      <b>매장방문</b>
+                      <i>매장 예약 시, 문자메시지가 발송됩니다.</i>
+                  </li>
+                  <li>step 2: 갤럭시 노트9 체험존에서
+                      <b>퀴즈영상 시청</b>
+                  </li>
+                  <li>step 3: step 1에서 받은 문자메시지에서
+                      <b>퀴즈페이지를 열고 영상 속 인증 번호 입력</b>
+                  </li>
+                  <li>step 4:
+                      <b>퀴즈 정답을 맞히고</b>매장 직원에게 알린 후
+                      <b>경품을 수령</b>하면 완료!</li>
+              </ol>
+              <p class="a11y-hidden">지인에게 공유하고 함께 방문해 보세요</p>
+          </div>
+
+          <div class="btns-wrap">
+              <button v-on:click="onShareSNS" class="btn btn--share-kakao has-shadow" type="button">
+        <span class="a11y-hidden">카카오톡 공유</span>
+      </button>
+              <button v-bind:data-clipboard-text="COPYURL" class="btn btn--copy-url has-shadow" type="button">
+        <span class="a11y-hidden">URL복사</span>
+      </button>
+          </div>
+
+          <dl class="a11y-hidden">
+              <dt>갤럭시 노트9 체험 TIP</dt>
+              <dd>
+                  <p>매장에서 이렇게 해보세요!</p>
+                  <ul>
+                      <li>세 번째 버튼(스페셜 영상)을 누르면 퀴즈 영상이 재생됩니다.</li>
+                      <li>영상을 멈추고 싶을 땐 S펜 버튼을 누르세요.한번 더 누르시면 다시 재생됩니다.</li>
+                  </ul>
+              </dd>
+          </dl>
+      </div>
+      <!-- caution -->
+      <div class="caution">
+          <div class="inner">
+              <h2 class="a11y-hidden">이벤트 유의사항</h2>
+              <ul class="a11y-hidden">
+                  <li>당첨자는 일 1천명으로 제한됩니다.</li>
+                  <li>비정상적인 방법으로 참여한 경우, 당첨 후에도 취소될 수 있습니다.</li>
+                  <li>개인정보 오기입으로 인해 경품 수령이 불가할 경우, 당사는 책임지지 않습니다.</li>
+                  <li>경품은 이벤트 페이지에서 방문 예약하신 매장을 방문해야만 증정되며, 예약하지 않은 매장에 방문할 경우 수령이 불가합니다.</li>
+                  <li>이벤트 기간 내에만 경품 수령이 가능하며 경품은 이벤트 참여 시 랜덤으로 증정됩니다.</li>
+                  <li>준비된 경품이 모두 소진될 경우 이벤트는 조기 마감될 수 있습니다.</li>
+                  <li>상기 경품 이미지와 실제 경품에는 차이가 있을 수 있으며, 내부 사정으로 인해 변경 될 수 있습니다.</li>
+                  <li>경품(스타벅스 아메리카노 / 배스킨라빈스 31 파인트)은 방문 예약 시 입력한 연락처로 발송됩니다.</li>
+                  <li>배송이 필요한 경품에 당첨 될 경우, 별도 연락을 통해 개인정보를 요청할 수 있습니다.</li>
+                  <li>이벤트 참여 및 경품 수령은 1인 1회만 가능하며, 중복 수령 및 대리 수령은 불가합니다.</li>
+                  <li>방문 예약한 매장에 방문하여 퀴즈를 참여하여야만 경품 수령이 가능합니다.</li>
+                  <li>이벤트 관련 문의 : 연락처</li>
+                  <li>매장 상황에 따라 일요일은 영업을 하지 않을 수 있습니다</li>
+              </ul>
+          </div>
+      </div>
+      <!-- // caution -->
+
+      <!-- banner -->
+      <a class="banner" href="http://pre-galaxy.uplus.co.kr/?utm_source=MCevent&utm_content=PC" target="_blank">
+          <span class="a11y-hidden">구매 혜택 알아보기</span>
+      </a>
+      <!-- // banner -->
+
+      <div v-bind:class="['dim', popupData['dim'] ? 'is-active' : '']"></div>
+
+      <!-- 예약 확인 -->
+      <div v-bind:class="['popup popup--reservation-ok', popupData['reservation-ok'] ? 'is-active' : '']">
+          <h2 class="popup__tit">
+              <img src="/s9capturemoments/images/popup/bg-reservation-ok.png" alt="예약 완료" />
+          </h2>
+          <div class="popup__con">
+              <img src="/s9capturemoments/images/popup/txt-reservation-ok.png" alt="방문 예약이 완료되었습니다. 발송된 문자메시지를 확인해주세요." />
+          </div>
+          <button v-on:click="onClosePopup('reservation-ok')" class="btn btn--ok">
+              <span class="a11y-hidden">확인</span>
+          </button>
+          <button v-on:click="onClosePopup('reservation-ok')" class="btn btn--close-white">
+              <span class="a11y-hidden">X</span>
+          </button>
+      </div>
+      <!-- // 예약 확인 -->
+
+      <!-- agree -->
+      <div v-bind:class="['popup popup--agree', popupData['agree'] ? 'is-active' : '']">
+          <h2 class="popup__tit">
+              <img src="/s9capturemoments/images/popup/bg-agree.png" alt="개인정보 수집 및 이용에 대한 동의" />
+          </h2>
+          <div class="popup__con">
+              <img src="/s9capturemoments/images/popup/txt-agree.png" alt="" aria-describedby="agree-desc" />
+          </div>
+          <button v-on:click="onClosePopup('agree')" class="btn btn--close" type="button">
+              <span class="a11y-hidden">닫기</span>
+          </button>
+          <div class="a11y-hidden" id="agree-desc">
+              <p>
+                  <strong>매장방문 예약을 위해서는 아래 사항에 대한 동의가 필요합니다.</strong>
+              </p>
+              <p>
+                  아래 사항에 동의하지 않을 수 있으나, 동의하지 않으실 경우 방문 예약이 불가능함을 알려 드립니다.
+              </p>
+
+              <p>본인은 귀사가 아래의 내용과 같이 본인의 개인정보를 수집/이용하는 것에 동의합니다.</p>
+
+              <ul>
+                  <li>개인정보를 위탁 받는 자 : 메가존㈜</li>
+                  <li>개인정보 위탁 목적 : 경품 발송 등 이벤트 진행 관련 업무</li>
+                  <li>위탁 대상 개인정보 : 성명, 연락처</li>
+                  <li>위탁 받는 자의 개인정보 보유 및 이용 기간 :경품 발송일로부터 60일 이내 폐기(2018. 8.10 ~ 9.30)</li>
+              </ul>
+          </div>
+          <button v-on:click="onClosePopup('agree')" class="btn btn--close-white">
+              <span class="a11y-hidden">X</span>
+          </button>
+      </div>
+      <!-- // agree -->
+
+      <!-- find store -->
+      <div v-bind:class="['popup popup--find-store', popupData['find-store'] ? 'is-active' : '']">
+          <h2 class="popup__tit">
+              <img src="/s9capturemoments/images/popup/bg-find-store.png" alt="유플러스 매장찾기" />
+          </h2>
+          <form v-on:submit.prevent="onSearchStore" class="form">
+              <fieldset class="popup__con">
+                  <legend class="popup__con-txt">
+                      <img src="/s9capturemoments/images/popup/txt-find-store-ex.png" alt="거주하시는 동 명을 입력해주세요(예: 역삼동)" />
+                  </legend>
+                  <div class="field field--store">
+                      <label class="a11y-hidden" for="location">거주하는 동</label>
+                      <input class="field__txt field__txt--large" id="location" type="text" v-model="userInfoData.storeQuery" />
+                      <button v-on:click="onSearchStore" class="btn btn--search" type="button">
+                          <span class="a11y-hidden">찾기</span>
+                      </button>
+                  </div>
+
+                  <div class="store-list-wrap">
+                      <table class="store-list">
+                          <caption class="a11y-hidden">거주하는 동에 있는 매장 리스트</caption>
+                          <colgroup>
+                              <col class="col-name" />
+                              <col class="col-addr" />
+                              <col class="col-map" />
+                              <col />
+                          </colgroup>
+                          <thead>
+                              <tr>
+                                  <th scope="col">
+                                      <span class="store-list__tit store-list__tit--name">매장명</span>
+                                  </th>
+                                  <th scope="col">
+                                      <span class="store-list__tit store-list__tit--addr">매장 주소</span>
+                                  </th>
+                                  <th scope="col" colspan="2">
+                                      <span class="store-list__tit store-list__tit--map">지도</span>
+                                  </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr v-for="store in getStoreList">
+                                  <td>{{store.marketName}}</td>
+                                  <td class="cell-addr">{{store.marketAddress}}</td>
+                                  <td>
+                                      <a v-bind:href="store.marketMapUrl" class="btn btn--location" target="_blank">
+                                          <span class="a11y-hidden">지도 보기</span>
+                                      </a>
+                                  </td>
+                                  <td>
+                                      <button v-on:click="onSelectStore(store)" class="btn btn--selected" type="button">
+                                          <span class="a11y-hidden">선택</span>
+                                      </button>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </fieldset>
+          </form>
+          <button v-on:click="onClosePopup('find-store')" class="btn btn--close" type="button">
+              <span class="a11y-hidden">닫기</span>
+          </button>
+          <button v-on:click="onClosePopup('find-store')" class="btn btn--close-white" type="button">
+              <span class="a11y-hidden">x</span>
+          </button>
+      </div>
+      <!-- // find store -->
+
+      <!-- user info -->
+      <div v-bind:class="['popup popup--user-info', popupData['user-info'] ? 'is-active' : '']">
+          <h2 class="popup__tit">
+              <img src="/s9capturemoments/images/popup/bg-info.png" alt="정보입력" />
+          </h2>
+          <form v-on:submit.prevent="onSubmitReservation" class="form">
+              <fieldset class="popup__con">
+                  <legend class="popup__con-txt">
+                      <img src="/s9capturemoments/images/popup/txt-info.png" alt="아래 정보를 입력해 주세요" />
+                  </legend>
+                  <!-- 성명 -->
+                  <div class="field field--name clearfix">
+                      <label class="lb lb--name" for="name">
+                          <span class="a11y-hidden">성명</span>
+                      </label>
+                      <input v-model="reservationData.name" class="field__txt field__txt--middle" id="name" type="text" />
+                  </div>
+                  <!-- // 성명 -->
+                  <!-- 연락처 -->
+                  <div class="field field--phone clearfix">
+                      <label class="lb lb--phone" for="phone">
+                          <span class="a11y-hidden">연락처</span>
+                      </label>
+                      <input v-model="reservationData.phoneNum" class="field__txt field__txt--small" id="phone" type="tel" maxlength="11" />
+                      <button v-on:click="onAuthCertification" v-bind:class="['btn', userInfoData.isSendAuthCertificationCode ? 'btn--resend' : 'btn--send']"
+                          type="button">
+                          <span class="a11y-hidden">발송</span>
+                      </button>
+                  </div>
+                  <!-- // 연락처 -->
+                  <!-- 인증번호 -->
+                  <div class="field field--verification clearfix">
+                      <time class="verification-time" v-if="userInfoData.isSendAuthCertificationCode">{{userInfoData.certificationTime}}</time>
+                      <input v-model="userInfoData.authCode" class="field__txt field__txt--small" type="text" maxlength="6" />
+                      <button v-on:click="onConfirmedCertification" class="btn btn--verification" type="button">
+                          <span class="a11y-hidden">확인</span>
+                      </button>
+                  </div>
+                  <!-- // 인증번호 -->
+                  <!-- 통신사 -->
+                  <div class="field clearfix">
+                      <label class="lb lb--carrier" for="carrier">
+                          <span class="a11y-hidden">이용중 통신사</span>
+                      </label>
+
+                      <div class="field__select">
+                          <select v-model="reservationData.mobileCarriers" name="checkPrize" name="" id="carrier">
+                              <option value="">{{msgs.CARRIER}}</option>
+                              <template th:each="state : ${T(com.lguplusevent.model.s9capture.moments.S9CaptureMomentsEnums.MOBILE_CARRIERS).values()}">
+                                  <option th:if="${state.getDisplayName() != ''}" th:value="${state}" th:text="${state.getDisplayName()}"></option>
+                              </template>
+                          </select>
+                      </div>
+                  </div>
+                  <!-- // 통신사 -->
+                  <!-- 휴대폰 -->
+                  <div class="field clearfix">
+                      <label class="lb lb--use-phone" for="use-phone">
+                          <span class="a11y-hidden">이용중 휴대폰</span>
+                      </label>
+                      <div class="field__select">
+                          <select v-model="reservationData.deviesType" name="visitPath" id="use-phone">
+                              <option value="">{{msgs.DEVICETYPE}}</option>
+                              <option th:each="state : ${T(com.lguplusevent.model.s9capture.moments.S9CaptureMomentsEnums.DEVICES).values()}" th:value="${state}"
+                                  th:text="${state.getDisplayName()}"></option>
+                          </select>
+                      </div>
+                  </div>
+                  <!-- // 휴대폰 -->
+                  <!-- 이용기간 -->
+                  <div class="field field--lst clearfix">
+                      <label class="lb lb--use-period" for="use-period">
+                          <span class="a11y-hidden">이용중 이용기간</span>
+                      </label>
+                      <div class="field__select">
+                          <select v-model="reservationData.mobileUsingPeriod" name="checkJoin" id="use-period">
+                              <option value="">{{msgs.PERIOD}}</option>
+                              <option th:each="state : ${T(com.lguplusevent.model.s9capture.moments.S9CaptureMomentsEnums.MOBILE_USING_PERIOD).values()}"
+                                  th:value="${state}" th:text="${state.getDisplayName()}"></option>
+                          </select>
+                      </div>
+                  </div>
+                  <!-- // 이용기간 -->
+                  <p class="txt-find-store">
+                      <img src="/s9capturemoments/images/popup/txt-info-find-store.png" alt="방문하실 매장을 선택해주세요" />
+                  </p>
+                  <div class="field field--store">
+                      <label class="a11y-hidden" for="location">거주하는 동</label>
+                      <input v-model="userInfoData.marketName" class="field__txt field__txt--large" id="location" type="text" readonly="readonly"
+                      />
+                      <button v-on:click="onShowPopup('find-store')" class="btn btn--search" type="button">
+                          <span class="a11y-hidden">찾기</span>
+                      </button>
+                  </div>
+                  <div class="field field--agree clearfix">
+                      <input type="checkbox" id="agree" v-model="reservationData.agree" />
+                      <label class="lb lb--agree" for="agree">
+                          <span class="a11y-hidden">개인정보 수집 및 이용에 대한 동의</span>
+                      </label>
+                      <button v-on:click="onShowPopup('agree')" class="btn btn--detail" type="button">
+                          <span class="a11y-hidden">자세히보기</span>
+                      </button>
+                  </div>
+              </fieldset>
+              <button class="btn btn--ok">
+                  <span class="a11y-hidden">확인</span>
+              </button>
+          </form>
+          <button v-on:click="onClosePopup('user-info')" class="btn btn--close-white">
+              <span class="a11y-hidden">X</span>
+          </button>
+      </div>
+      <!-- // user info -->
+
+  </div>
+  <!-- // wrap -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
+  <script src="/js/pub.js"></script>
+</body>
+
+</html>

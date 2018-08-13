@@ -1,0 +1,29 @@
+
+$width-mobile: 720px;
+
+
+.wrap {
+  @include debugger;  
+  margin-left: auto;
+  margin-right: auto;
+  width: $width-mobile;  
+}
+
+.certification {
+  @include background-image($loc + 'bg-certification.png');  
+  padding: 514px 0 80px;
+  text-align: center;
+
+  .field {
+    margin-bottom: 60px;
+  }
+
+  .field__txt {    
+    width: 100%;
+  }
+}
+
+.caution {
+  @include background-image($loc + 'img-caution.png');
+  height: 608px;
+}

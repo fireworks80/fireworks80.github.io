@@ -1,0 +1,102 @@
+.btn {
+  @include debugger;
+  @include background-image($loc + "ir-btns.png");
+  padding: 0;
+  display: inline-block;
+  height: 80px;
+  border: 0;
+  cursor: pointer;
+
+  &--visit-reservation {
+    width: 360px;
+    background-position: left top;
+    border-radius: 40px;
+  }
+  &--share-kakao {
+    width: 300px;
+    background-position: left -182px;
+    border-radius: 40px;
+  }
+  &--copy-url {
+    width: 300px;
+    background-position: left -89px;
+    border-radius: 40px;
+  }
+  &--close {
+    width: 360px;
+    background-position: left -367px;
+
+    &-white,
+    &-black {
+      width: 38px;
+      height: 39px;
+    }
+    &-white {
+      background-position: left -927px;
+    }
+
+    &-black {
+      background-position: left -456px;
+    }
+  }
+  &--location {
+    width: 25px;
+    height: 32px;
+    background-position: -70px -927px;
+  }
+  &--selected {
+    width: 67px;
+    height: 37px;
+    background-position: left -480px;
+  }
+  &--search {
+    width: 190px;
+    background-position: left -814px;
+  }
+  &--detail {
+    width: 190px;
+    height: 61px;
+    background-position: left -538px;
+  }
+  &--verification {
+    width: 190px;
+    height: 80px;
+    background-position: left -620px;
+  }
+  &--resend {
+    width: 190px;
+    height: 80px;
+    background-position: left -721px;
+  }
+  &--ok {
+    width: 360px;
+    background-position: left -274px;
+  }
+
+  // quiz
+  &--check-certification {
+    width: 360px;
+    background-position: left -326px;
+  }
+
+  &--retry {
+    width: 360px;
+    background-position: left -217px;
+  } 
+
+  &--reset {
+    width: 290px;
+    background-position: left top;
+  }
+
+  &--submit {
+    width: 290px;
+    background-position: left -109px;
+  }
+
+  &.has-shadow {
+    -webkit-box-shadow: 22px 25px 94px -9px rgba(78, 110, 136, 0.6);
+    -moz-box-shadow: 22px 25px 94px -9px rgba(78, 110, 136, 0.6);
+    box-shadow: 22px 25px 94px -9px rgba(78, 110, 136, 0.6);
+  }
+}
