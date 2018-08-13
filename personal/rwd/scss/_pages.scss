@@ -7,17 +7,17 @@ $bp-d: 1920px;
 .visual {
     @include debugger;
     @include background($loc + 'img-visual.jpg');
-    @include size(null, 779px);
-
     @media(min-width: $bp-m + 1) {
         background: red;
     }
     display: flex;
     flex-direction: column;    
+    min-height: 799px;
 
     &__txt {
-        @include debugger;                
-        margin-left: percentage(88px / $bp-m);
+        @include debugger;      
+        @include size(percentage(574px / $bp-m), null);          
+        margin: 0 auto;
         color: #fff;
         font-size: 68px;
         font-family: 'aileronregular', sans-serif;

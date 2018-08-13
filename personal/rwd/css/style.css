@@ -56,9 +56,9 @@ body {
 .visual {
   outline: 1px dashed red;
   background: url("../images/img-visual.jpg") no-repeat center top;
-  height: 779px;
   display: flex;
   flex-direction: column;
+  min-height: 799px;
 }
 
 @media (min-width: 751px) {
@@ -69,7 +69,8 @@ body {
 
 .visual__txt {
   outline: 1px dashed red;
-  margin-left: 11.73333%;
+  width: 76.53333%;
+  margin: 0 auto;
   color: #fff;
   font-size: 68px;
   font-family: 'aileronregular', sans-serif;
