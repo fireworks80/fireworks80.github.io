@@ -4,7 +4,7 @@
 
 #### 2018
 
-[**U+ 이벤트**](/personal/portfolio/Uplus-reservation/)
+[**U+ 이벤트**](https://events.uplus.co.kr/note9_store)
 - [source](https://github.com/fireworks80/fireworks80.github.io/tree/master/personal/portfolio/Uplus-reservation)
 
 ````
