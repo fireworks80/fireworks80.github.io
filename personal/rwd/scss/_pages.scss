@@ -14,20 +14,6 @@ $color-black: #0b0b0b;
   background-size: cover;
   align-items: center;
 
-  &__top {
-    @include debugger;
-    @include size(100%, null);
-    padding: 27px percentage(32px / $bp-m) 0 percentage(29px / $bp-m);
-    margin-bottom: 209px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @media(min-width: $bp-m + 1) {
-      margin-bottom: 126px;
-    }
-  } // top
-
   &__txt {
     @include debugger;
     @include size(percentage(574px / $bp-m), null);
@@ -62,35 +48,79 @@ $color-black: #0b0b0b;
       display: block;
       padding-top: 36px;
       border-top: 2px solid #fff;
-      font-family: 'aileronbold';
+      font-family: "aileronbold";
       font-size: 16px;
 
       span {
         margin-top: 13px;
         display: block;
-        font-family: 'aileronlight';
+        font-family: "aileronlight";
         font-size: 14px;
       }
     }
   } // slider
 }
 
-.gnb {  
-  ul {
-    display: none;
+// gnb
+.gnb {
+  @include debugger;
+  @include size(100%, null);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px percentage(32px / $bp-m) 0 percentage(29px / $bp-m);
 
-    @media (min-width: $bp-m + 1) {
-      display: flex;      
-      justify-content: space-between;
-      font-size: 18px;
-      font-family: "aileronlight";
+.visual & {
+  margin-bottom: 209px;
+
+  @media (min-width: $bp-m + 1) {
+    margin-bottom: 126px;
+  }
+}
+
+  nav {
+    display: none;
+    width: percentage(390px / $bp-t);
+
+    @media(min-width: $bp-m + 1) {
+      display: block;
     }
   }
 
-  @media(min-width: $bp-m + 1) {
-    width: percentage(390px / $bp-t);
+  ul {    
+    display: flex;
+    justify-content: space-between;    
+    font-size: 18px;
+    font-family: "aileronlight";
   }
 }
+
+//   &__top {
+//     @include debugger;
+//
+//     margin-bottom: 209px;
+//
+
+//     @media (min-width: $bp-m + 1) {
+//       margin-bottom: 126px;
+//     }
+//   } // top
+
+// // gnb
+// .gnb {
+//   @media (min-width: $bp-m + 1) {
+//     width: percentage(390px / $bp-t);
+//   }
+
+//   ul {
+//     @media (min-width: $bp-m + 1) {
+//       display: flex;
+//       justify-content: space-between;
+//       font-size: 18px;
+//       font-family: "aileronlight";
+//     }
+//   }
+// }
 
 .logo {
   @include background($loc + "logo-white.png");
@@ -108,6 +138,22 @@ $color-black: #0b0b0b;
 
   @media (min-width: $bp-m + 1) {
     display: none;
+  }
+}
+
+.middle-nav {
+  display: none;
+
+  .logo {
+    background-image: url($loc+"logo-black.png");
+  }
+
+  a {
+    color: #222324;
+  }
+
+  @media (min-width: $bp-m + 1) {
+    display: block;
   }
 }
 

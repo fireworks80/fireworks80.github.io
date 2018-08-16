@@ -80,22 +80,6 @@ body {
   align-items: center;
 }
 
-.visual__top {
-  outline: 1px dashed red;
-  width: 100%;
-  padding: 27px 4.26667% 0 3.86667%;
-  margin-bottom: 209px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@media (min-width: 751px) {
-  .visual__top {
-    margin-bottom: 126px;
-  }
-}
-
 .visual__txt {
   outline: 1px dashed red;
   width: 76.53333%;
@@ -131,34 +115,52 @@ body {
   display: block;
   padding-top: 36px;
   border-top: 2px solid #fff;
-  font-family: 'aileronbold';
+  font-family: "aileronbold";
   font-size: 16px;
 }
 
 .visual__slider a span {
   margin-top: 13px;
   display: block;
-  font-family: 'aileronlight';
+  font-family: "aileronlight";
   font-size: 14px;
 }
 
-.gnb ul {
+.gnb {
+  outline: 1px dashed red;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 4.26667% 0 3.86667%;
+}
+
+.visual .gnb {
+  margin-bottom: 209px;
+}
+
+@media (min-width: 751px) {
+  .visual .gnb {
+    margin-bottom: 126px;
+  }
+}
+
+.gnb nav {
   display: none;
+  width: 38.08594%;
 }
 
 @media (min-width: 751px) {
-  .gnb ul {
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    font-family: "aileronlight";
+  .gnb nav {
+    display: block;
   }
 }
 
-@media (min-width: 751px) {
-  .gnb {
-    width: 38.08594%;
-  }
+.gnb ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-family: "aileronlight";
 }
 
 .logo {
@@ -181,6 +183,24 @@ body {
 @media (min-width: 751px) {
   .hamburger {
     display: none;
+  }
+}
+
+.middle-nav {
+  display: none;
+}
+
+.middle-nav .logo {
+  background-image: url("../images/logo-black.png");
+}
+
+.middle-nav a {
+  color: #222324;
+}
+
+@media (min-width: 751px) {
+  .middle-nav {
+    display: block;
   }
 }
 
