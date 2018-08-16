@@ -5,8 +5,11 @@
 }
 
 p,
-figure {
+figure,
+h1, h2, h3,
+ul {
   margin: 0;
+  padding: 0;
 }
 
 input,
@@ -14,6 +17,19 @@ span,
 a,
 img {
   vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
 }
 
 body {
@@ -60,29 +76,11 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 799px;
+  background-size: cover;
+  align-items: center;
 }
 
-@media (min-width: 751px) {
-  .visual {
-    background: red;
-  }
-}
-
-.visual__txt {
-  outline: 1px dashed red;
-  width: 76.53333%;
-  margin: 0 auto;
-  color: #fff;
-  font-size: 68px;
-  font-family: 'aileronregular', sans-serif;
-}
-
-.visual__txt .ico--arrow {
-  margin-left: 4.3554%;
-  margin-top: 24px;
-}
-
-.gnb {
+.visual__top {
   outline: 1px dashed red;
   width: 100%;
   padding: 27px 4.26667% 0 3.86667%;
@@ -90,6 +88,77 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: 751px) {
+  .visual__top {
+    margin-bottom: 126px;
+  }
+}
+
+.visual__txt {
+  outline: 1px dashed red;
+  width: 76.53333%;
+  margin-bottom: 120px;
+  color: #fff;
+  font-size: 68px;
+  font-family: "aileronregular";
+  word-wrap: break-word;
+}
+
+.visual__txt .ico--arrow {
+  margin-left: 4.3554%;
+  margin-top: 24px;
+}
+
+.visual__slider {
+  outline: 1px dashed red;
+  display: flex;
+  width: 78.125%;
+}
+
+.visual__slider li {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.visual__slider li.is-active a {
+  border-top-color: #43f3d0;
+  color: #43f3d0;
+}
+
+.visual__slider a {
+  display: block;
+  padding-top: 36px;
+  border-top: 2px solid #fff;
+  font-family: 'aileronbold';
+  font-size: 16px;
+}
+
+.visual__slider a span {
+  margin-top: 13px;
+  display: block;
+  font-family: 'aileronlight';
+  font-size: 14px;
+}
+
+.gnb ul {
+  display: none;
+}
+
+@media (min-width: 751px) {
+  .gnb ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-family: "aileronlight";
+  }
+}
+
+@media (min-width: 751px) {
+  .gnb {
+    width: 38.08594%;
+  }
 }
 
 .logo {
@@ -107,6 +176,12 @@ body {
   padding: 0;
   border: 0;
   cursor: pointer;
+}
+
+@media (min-width: 751px) {
+  .hamburger {
+    display: none;
+  }
 }
 
 .grid {
@@ -152,7 +227,7 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  content: '';
+  content: "";
 }
 
 .grid--5:hover figcaption {
@@ -177,6 +252,122 @@ body {
 
 .grid img {
   width: 100%;
+}
+
+.contents {
+  outline: 1px dashed red;
+  background-color: #0b0b0b;
+  color: #fff;
+}
+
+.contents__sec {
+  outline: 1px dashed red;
+  width: 76.53333%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contents__article {
+  flex: 1 0 58.26667%;
+  margin-left: 1.60183%;
+  line-height: 1.2;
+}
+
+.contents__tit {
+  width: 18.26667%;
+  font-family: "aileronbold";
+  font-size: 22px;
+  color: #fff;
+}
+
+.contents__tit::first-letter {
+  text-transform: uppercase;
+}
+
+.contents time {
+  display: block;
+  margin-top: 33px;
+  font-size: 20px;
+  color: #555;
+}
+
+.news {
+  padding-top: 73px;
+  padding-bottom: 70px;
+  font-size: 32px;
+  border-bottom: 2px solid #55acee;
+}
+
+.sns {
+  padding-top: 74px;
+  padding-bottom: 65px;
+  font-size: 22px;
+  border-bottom: 2px solid #171717;
+}
+
+.sns li {
+  margin-bottom: 56px;
+}
+
+.sns li:last-child {
+  margin-bottom: 0;
+}
+
+.sns__link {
+  color: #55acee;
+  word-break: break-all;
+}
+
+footer {
+  background: #0b0b0b url("../images/logo-white.png") no-repeat 4.66667% 70px;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  font-size: 22px;
+  color: #555;
+}
+
+.contact {
+  outline: 1px dashed red;
+  margin-bottom: 62px;
+}
+
+.contact__list {
+  display: flex;
+  justify-content: space-between;
+  width: 58.26667%;
+}
+
+.contact__link {
+  color: #43f3d0;
+}
+
+.contact__tel {
+  color: inherit;
+}
+
+.social {
+  margin-top: 67px;
+}
+
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 58.26667%;
+}
+
+.social li {
+  outline: 1px dashed red;
+  flex: 1 0 50%;
+  margin-bottom: 38px;
+}
+
+.social a {
+  color: inherit;
+}
+
+.social a:hover {
+  color: #e35087;
 }
 
 .a11y-hidden {
