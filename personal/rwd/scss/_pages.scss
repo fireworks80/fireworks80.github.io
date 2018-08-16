@@ -63,13 +63,13 @@ $bp-d: 1920px;
   &--1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    background-image: url($loc + 'img-grid1.png');
+    // background-image: url($loc + 'img-grid1.png');
   }
 
   &--3 {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
-    background-image: url($loc + 'img-grid3.png');
+    // background-image: url($loc + 'img-grid3.png');
   }
 
   &--5 {
@@ -79,7 +79,7 @@ $bp-d: 1920px;
     align-items: center;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    background-image: url($loc + 'img-grid5.png');
+    // background-image: url($loc + 'img-grid5.png');
 
     figcaption {
       display: none;
