@@ -281,20 +281,3 @@
     - 그누보드를 사용하여 제작한 사이트
 ````
 
-### 번역
-
-[**css 설계 교과서**](https://github.com/fireworks80/css-japan-book-translate)
-````
-- css 모듈에 관한 책을 찾는데 국내에는 찾을 수 없어 일본 원서 구매 
-- 현재도 변역 중 (발번역에 주의)
-````
-
-### Today I Learned
-
-- [Git](https://github.com/fireworks80/TIL/tree/master/Git)
-- [css](https://github.com/fireworks80/TIL/tree/master/css)
-- [javascript](https://github.com/fireworks80/TIL/tree/master/javascript)
-
-````
-- 매일 조금씩 이라도 공부하여 정리내용을 올리기
-````
