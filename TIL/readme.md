@@ -34,3 +34,10 @@ css position이 static 또는 relative 일경우 float이 none으로 되었을 �
     - flex box(display: flex | inline-flex)
 
 bfc내의 생성된 요소들 중 새로 생성되는 bfc요소의 하위 요소는 포함 하지 않는다.
+
+## 8.24(Fri)
+
+- webpack
+  - 웹자원들(js, css, img)들을 최적화된 파일셋으로 만든다
+  - 파일들간의 의존성 관계를 갖게되서 모듈관리를 수월하게 한다.
+  - gulp, grunt와같은 task runner 기능 + 모듈 의존성 관리
