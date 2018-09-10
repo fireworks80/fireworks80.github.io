@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=720, target-densitydpi=medium-dpi, user-scalable=no,maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="//cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css" " rel="stylesheet ">
+  <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css ">
+  <link rel="stylesheet " href="/js/drawingboard/drawingboard.css ">
+  <link rel="stylesheet " href="/css/style-m.css ">
+</head>
+
+<body>
+  <!-- app -->
+	<section id="app" class="app">
+		<h1 class="a11y-hidden">U+ 사전 예약 이벤트</h1>
+		<!-- wrap -->
+		<div v-bind:class="['wrap', pageInfo === 'visual' ? 'is-active' : '']">
+			<!-- visual -->
+			<div class="visual">
+				<header class="visual__tit">
+					<span class="a11y-hidden">LG유플러스 X 갤럭시 노트9</span>
+					<h2 class="a11y-hidden">나의 일상을 S펜으로 그리다.</h2>
+				</header>
+				<p class="a11y-hidden">속도 용량 걱정 없는 요금제로 업그레이드되는 당신의 일상 유플러스의 다양한 혜택으로 가득한 일상을 갤럭시 노트9 S펜으로 그려주세요!</p>
+
+				<dl class="a11y-hidden">
+					<dt>이벤트 대상</dt>
+					<dd>LG U+ 갤럭시 노트9 8월 내 개통 고객</dd>
+					<dt>이벤트 기간</dt>
+					<dd>2018.9.6 - 9.16</dd>
+				</dl>
+				<figure class="s-pen"></figure>
+			</div>
+			<!-- // visual -->
+
+			<section>
+				<h2 class="a11y-hidden">이벤트 경품</h2>
+
+				<!-- gift -->
+				<div class="gift">
+					<div class="gift__tit">
+						<h3 class="a11y-hidden">이벤트 경품<em>(우수상)</em></h3>
+						<p class="a11y-hidden">받고 싶은 경품에 맞는 주제를 골라 그림을 그려주세요</p>
+					</div>
+					<!-- 경품슬라이드 -->
+					<figure class="gift__slider owl-carousel">
+						<figure><img src="/note9draw/images/img-gift1.png" alt=""></figure>
+						<figure><img src="/note9draw/images/img-gift2.png" alt=""></figure>
+						<figure><img src="/note9draw/images/img-gift3.png" alt=""></figure>
+						<figure><img src="/note9draw/images/img-gift4.png" alt=""></figure>
+						<figure><img src="/note9draw/images/img-gift5.png" alt=""></figure>
+					</figure>
+					<!-- // 경품슬라이드 -->
+					<h3 class="a11y-hidden">이벤트 경품<em>(참가상)</em></h3>
+					<p class="a11y-hidden">참여만 해도 경품이</p>
+					<dl class="gift__participation">
+						<dt class="a11y-hidden">스타벅스</dt>
+						<dd class="a11y-hidden">아이스 카페 아메리카노 TALL</dd>
+					</dl>
+					<button v-on:click="onShowCertification('info')" class="btn btn--start-draw" id="drawPicture" type="button"><span class="a11y-hidden">그림그리기</span></button>
+				</div>
+				<!-- // gift -->
+			</section>
+
+			<section class="judging-criteria">
+				<header>
+					<h2 class="a11y-hidden">작품 선정 기준</h2>
+					<p class="a11y-hidden">2차 심사를 통해 9개의 키워드 별 각 4개의 수상작을 선정합니다. <em>*참가상(500명)은 랜덤 선정 예정</em></p>
+				</header>
+
+				<ol class="a11y-hidden">
+					<li>1차: LG유플러스 브랜드 내부 심사 (투표 진행 작품 선전)</li>
+					<li>2차: 일반인 대상 작품 투표 진행</li>
+					<li><strong>최종: 투표 결과를 통한 최종 우수작 선정(총 36명)</strong></li>
+				</ol>
+				<p class="a11y-hidden">키워드: <em>친구, 가족, 운동, 음식, 음악, 학교, 직장, 휴식, 트렌드</em></p>
+			</section>
+
+			<section id="gallery">
+				<header class="join-state-tit">
+					<h2 class="a11y-hidden">이벤트 참여 현황</h2>
+					<p class="a11y-hidden">당신의 소중한 일상을 담은 그림, 지금 바로 참여해주세요.</p>
+				</header>
+				<!-- 그림 슬라이드 -->
+				<div class="join-state-pic">
+					<!-- 갤러리 -->
+					<img v-if="!chunkGallery.length" src="/note9draw/images/bg-gallery-no-data.png" alt="">
+					<div v-else class="gallery owl-carousel">
+						<!-- 갤러리 아이템 -->
+							<div v-for="picObj in chunkGallery" class="gallery__flex">
+								<figure v-for="pic in picObj" class="pic">
+									<span class="pic__img"><img v-bind:src="pic.pictureUrl" alt=""></span>
+									<figcaption>
+										<dl v-show="pic.pictureType">
+											<dt v-bind:class="['pic__tit pic__tit--' + pic.pictureType]">{{pic.pictureType}}</dt>
+											<dd>{{ pic.pictureDetail }}</dd>
+										</dl>
+									</figcaption>
+								</figure>
+							</div>
+						<!-- // 갤러리 아이템 -->
+					</div>
+					<!-- 갤러리 -->
+				</div>
+				<!-- // 그림 슬라이드 -->
+			</section>
+			<!-- 요금제, 서비스 -->
+			<section>
+				<h2 class="a11y-hidden">U+ 데이터 요금제 및 서비스</h2>
+				<p class="enjoy-tit">갤럭시 노트9과 속도 용량 걱정없는 데이터 요금제로 <b>누리는 즐거움</b></p>
+				<ul class="enjoy-con">
+					<li class="a11y-hidden">넷플릭스: <strong>3개월 무료</strong><em>(월 12,000원)</em></li>
+					<li class="a11y-hidden">U+데이터충전소앱: 40GB 데이터 선물을 편리하게!</li>
+					<li class="a11y-hidden">데이터 걱정 없이 <strong>지니뮤직 무료</strong><em>(월 7,700원)</em></li>
+					<li class="a11y-hidden">U+우리집 AI: 클로바프렌즈+ 스피커 <strong>무료증정</strong><em>(129,000원 상당)</em></li>
+				</ul>
+
+				<p class="service-tit">유플러스만의 <b>재미있고 편리한 서비스</b></p>
+				<ul class="service-con">
+					<li class="a11y-hidden">TV중계보다 더 재미있는 <b>U+프로야구</b></li>
+					<li class="a11y-hidden">TV중계보다 더 재미있는 <b>U+골프</b></li>
+					<li class="a11y-hidden"><b>YouTube Premium</b><strong>3개월 무료</strong><em>(월 8,600원)</em></li>
+					<li class="a11y-hidden"><b>Apple Music</b><strong>5개월 무료</strong><em>(월9,900원)</em></li>
+				</ul>
+			</section>
+			<!-- // 요금제, 서비스 -->
+		</div>
+		<!-- // wrap -->
+		<!-- caution -->
+		<section v-bind:class="['caution', pageInfo === 'visual' ? 'is-active' : '']">
+			<h2 class="a11y-hidden">이벤트 유의사항</h2>
+			<ul class="a11y-hidden">
+				<li>사전 예약 여부와 관계없이 8월 내 갤럭시노트9을 개통 완료하신 고객은 모두 대상에 해당됩니다. <em>(단, “찾아라! 셔플카드 100% 당첨 이벤트”에 본 이벤트 당첨 대상에서 제외됩니다.)</em></li>
+				<li>올바르지 않은 방법으로 참여한 경우, 당첨 후에도 취소 될 수 있습니다. </li>
+				<li>갤럭시노트9 개통 시 부여받은 연락처로만 참여 가능합니다. </li>
+				<li>이벤트 참여는 1인 1회만 가능하며, 당첨 경품 또한 본인만 수령할 수 있습니다. </li>
+				<li>당첨자는 LG U+ 내부 심사를 통한 1차 선정 후 별도의 투표 이벤트를 통해 선정 될 예정입니다. </li>
+				<li>당첨 경품의 경우 상기 이미지와 상이할 수 있습니다. </li>
+				<li>배송이 필요한 경품의 경우, 당첨자에게 별도 연락하여 개인정보를 추가 요청 할 수 있습니다. </li>
+				<li>심사결과에 따라 수상작이 나오지 않을 수 있습니다. </li>
+				<li>미풍양속을 해치는 요소 등 기타 주최측 판단에 따라 심사에서 제외될 수 있습니다. </li>
+				<li>제출된 모든 이미지와 콘텐츠는 LG U+에서 향후 홍보 자료 및 일반에게 공개 활용될 수 있습니다.</li>
+				<li>LG U+는 수상작을 2차 저작물로(재가공) 활용할 수 있으며 이를 일반에 공개하고 홍보물로 제작, 배포, 복제 등을 할수 있습니다. </li>
+				<li>심사 및 평가 점수는 비공개로 하며, 심사 결과에 대해 어떠한 이의도 제기할 수 없습니다.</li>
+				<li>상금 수상에 따른 제세공과금은 수상자 본인이 부담합니다.<em>(제세공과금 22%)</em> </li>
+				<li>공모전 내용 및 시상내역은 주최사 사정에 따라 변경될 수 있습니다. </li>
+				<li>타인의 권리를 침해하거나 분쟁이 발생하는 등의 문제가 생길 경우, 선정된이후라도 취소 및 경품 환수될 수 있습니다. </li>
+				<li>이벤트 관련 문의는 OOO으로 연락주시기 바랍니다.</li>
+			</ul>
+		</section>
+		<!-- // caution -->
+
+		<!-- 주제 선택 -->
+		<section v-bind:class="['select-subject', pageInfo === 'subject' ? 'is-active' : '']">
+			<h2 class="a11y-hidden">그림 주제 선택</h2>
+			<!-- list -->
+			<div class="select-subject__list owl-carousel">
+				<select-subject v-for="subjectCon in subjectDatas" v-bind:subject="subjectCon" v-on:selectedsubject="setSubject"></select-subject>
+			</div>
+			<!-- // list -->
+			<button v-on:click="onSubjectConfirm" class="btn btn--selected" id="selectComplete" type="button"><span class="a11y-hidden">선택완료</span></button>
+		</section>
+		<!-- // 주제 선택 -->
+
+		<!-- 그림그리기 -->
+		<section v-bind:class="['drawing', pageInfo === 'drawing' ? 'is-active' : '']">
+			<h2 class="a11y-hidden">그림그리기</h2>
+
+			<div class="drawing__pannel">
+				<div id="drawing-board" class="drawing__board"></div>
+				<p class="drawing__desc">
+					<span>
+						<input
+							v-model="description"
+							v-on:keyup="checkTextLength"
+							v-bind:placeholder="msgData.maxTxtLen"
+							type="text"
+							maxlength="20">
+					</span>
+					<em>({{ maxStringLenth }}자 / 20자)</em>
+				</p>
+				<!-- hidden canvas -->
+				<div style="position: absolute; top: 0; left: 0; visibility: hidden; z-index: -100;">
+					<canvas id="hidden-canvas" width="300" height="355"></canvas>
+				</div>
+				<!-- // hidden canvas -->
+			</div>
+			<div class="drawing__btns">
+				<button v-on:click="onReselect" class="btn btn--reSelect" id="reSelectedCategory" type="button">
+					<span class="a11y-hidden">다시선택</span>
+				</button>
+				<button v-on:click="onEntryPic" class="btn btn--enter-event" id="saveEntry" type="button">
+					<span class="a11y-hidden">응모하기</span>
+				</button>
+			</div>
+		</section>
+		<!-- // 그림그리기 -->
+		<!-- popup -->
+		<div v-bind:class="['dim', popupData.dim ? 'is-active' : '']"></div>
+
+		<!-- pc 접속 팝업 -->
+		<div v-bind:class="['popup pc-alert', popupData.alertPc ? 'is-active' : '']">
+			<p class="a11y-hidden">LG유플러스 X 갤럭시 노트9</p>
+			<h2 class="a11y-hidden">나의 일상을 S펜으로 그리다</h2>
+			<p class="a11y-hidden"><strong>본 이벤트는모바일로만 참여 가능합니다</strong></p>
+		</div>
+		<!-- //pc 접속 팝업 -->
+
+		<!-- 본인인증 팝업 -->
+		<div v-bind:class="['popup certification', popupData.certification ? 'is-active' : '']">
+			<header v-bind:class="['certification__tit certification__' + certificationInfo.name]">
+				<div id="info" class="a11y-hidden">
+					<h2>{{ certificationInfo.info[certificationInfo.name].tit }}</h2>
+					<p>{{ certificationInfo.info[certificationInfo.name].desc }}</p>
+				</div>
+			</header>
+
+			<!-- 개인정보 -->
+			<form v-if="certificationInfo.name === 'info'"  v-on:submit.prevent="onCertificationConfirm" class="form">
+				<p class="row">
+					<label class="lb lb--name" for="name"></label>
+					<span class="field"><input v-model="authData.name" id="name" type="text"></span>
+				</p>
+				<p class="row">
+					<label class="lb lb--phone" for="phone"></label>
+					<span class="field"><input v-model="authData.phone" id="phone" type="tel"></span>
+				</p>
+
+				<ul class="agree-list">
+					<li>
+						<input v-model="authData.privacyOne" id="agree1" type="checkbox">
+						<label for="agree1"><span class="a11y-hidden">개인정보 수집 및 이용에 대한 동의</span></label>
+						<button v-on:click="onShowCertification('agree1')" class="btn btn--detail" type="button"><span class="a11y-hidden">자세히보기</span></button>
+					</li>
+					<li>
+						<input v-model="authData.privacyTwo" id="agree2" type="checkbox">
+						<label for="agree2"><span class="a11y-hidden">개인정보 제 3자 제공에 대한 동의</span></label>
+						<button v-on:click="onShowCertification('agree2')" class="btn btn--detail" type="button"><span class="a11y-hidden">자세히보기</span></button>
+					</li>
+				</ul>
+				<button class="btn btn--ok" id="checkPrivacy" type="submit"><span class="a11y-hidden">확인</span></button>
+			</form>
+			<!-- // 개인정보 -->
+
+			<!-- agree1 -->
+			<div v-if="certificationInfo.name === 'agree1'" class="agree1">
+				<p>자사는 이벤트 진행 등을 위하여 귀하의 개인정보를 다음과 같이 수집 및 이용하고자 합니다.</p>
+				<p>개인정보 수집 및 이용에 동의하지 않을 수 있으나, 동의하지 않을 경우 이벤트 참여가 불가합니다.</p>
+				<dl>
+					<dt>개인정보 수집 및 이용 목적 :</dt>
+					<dd>경품 발송 등 이벤트 진행 관련 업무 </dd>
+					<dt>수집 및 이용할 개인정보의 내용 :</dt>
+					<dd>성명, 연락처</dd>
+					<dt>개인정보 보유 및 이용 기간 :</dt>
+					<dd>투표 이벤트 종료일로부터 60일(2개월) 후 폐기 (2018.10.7~12.5)</dd>
+				</dl>
+			</div>
+			<!-- // agree1 -->
+			<!-- agree2 -->
+			<div v-if="certificationInfo.name === 'agree2'" class="agree2">
+				<p>자사는 이벤트 진행 등을 위하여 귀하의 개인정보를 다음과 같이 외부 전문업체에 위탁하여 운영하고 있습니다.</p>
+				<p>개인정보 수집 및 이용에 동의하지 않을 수 있으나, 동의하지 않을 경우 이벤트 참여가 불가합니다.</p>
+				<dl>
+					<dt>개인정보를 위탁 받는 자 :</dt>
+					<dd>메가존㈜ </dd>
+					<dt>개인정보 위탁 목적 :</dt>
+					<dd>이벤트 관련 고지 및 문의 처리, 경품배송, 제세공과금 처리, CS처리 등 프로모션 대행</dd>
+					<dt>업무 위탁 대상 개인정보 :</dt>
+					<dd>성명, 연락처</dd>
+					<dt>위탁 받는 자의 개인정보 보유 및 이용 기간 :</dt>
+					<dd>투표 이벤트 종료일로부터 60일(2개월) 후 폐기 (2018.10.7 ~12.5)</dd>
+				</dl>
+			</div>
+			<!-- // agree2 -->
+
+			<button v-on:click="onHideCertification(certificationInfo.name)" class="btn btn--close-blue" type="button"><span class="a11y-hidden">X</span></button>
+		</div>
+		<!-- // 본인인증 팝업 -->
+
+		<!-- 응모완료 -->
+		<div v-bind:class="['popup entry', 'entry--' + sendData.pictureType, popupData.entry ? 'is-active' : '']">
+			<p class="entry__tit">{{subjectDatas[sendData.pictureType].korean}}에 응모 완료되었습니다.</p>
+			<p class="entry__desc">당첨자는 <em>09/24 ~ 10/07 투표이벤트 기간 동안</em> 고객 투표를 통해 최종 선정되며, 당첨자에게는 <em>10월 중순 개별 연락 예정</em>입니다.</p>
+
+			<figure class="entry__card">
+				<figcaption class="a11y-hidden">
+					<p>
+						<b>{{ subjectDatas[sendData.pictureType].giftName }}</b>
+						{{ subjectDatas[sendData.pictureType].entryDesc }}
+					</p>
+				</figcaption>
+			</figure>
+			<div class="entry__btn-wrap" >
+				<a
+					v-on:click="onImgDownload"
+					class="btn btn--save-pic"
+					href="http://www.uplus.co.kr/ent/spps/chrg/RetrieveChrgList.hpi?catgCd=All&mid=11014"
+					id="downloadPicture"
+					target="_blank">
+					<span class="a11y-hidden">내가 그린 그림 저장</span>
+				</a>
+				<a
+					v-on:click.prevent="onGoToMain" id="goToGallary"
+					class="btn btn--goto-gallery" href="#gallery">
+					<span class="a11y-hidden">다른 참여작 확인</span>
+				</a>
+			</div>
+
+			<a class="entry__banner" id="entryBanner" href="http://www.uplus.co.kr/ent/spps/chrg/RetrieveChrgList.hpi?catgCd=All&mid=11014">
+				<strong>인기</strong>
+				<p><em>유플러스로 갤럭시 노트9 완벽하게 즐기는 법!</em></p>
+				<p>속도 용량 걱정 없는 데이터 요금제 자세히 보기</p>
+			</a>
+			<button v-on:click="onHideEntry" class="btn btn--close-yellow" type="button"><span class="a11y-hidden">X</span></button>
+		</div>
+		<!-- // 응모완료 -->
+
+		<!-- 그림그리기 주제 확인 alert -->
+		<div v-bind:class="['popup alert', 'alert--' + sendData.pictureType, popupData.alert ? 'is-active' : '']">
+
+			<p>{{ subjectDatas[sendData.pictureType].drawTit }}</p>
+
+			<button v-on:click="onStartDrawing" class="btn btn--start-draw-alert" type="button"><span class="a11y-hidden">그리기 시작</span></button>
+		</div>
+		<!-- // 그림그리기 주제 확인 alert -->
+
+		<img v-bind:class="['loading', popupData.loading ? 'is-active' : '']" src="/note9draw/images/loading.gif" alt="">
+	</section>
+	<!-- // app -->
+
+	<!--
+	    - template
+	    - 그림그리기 주제 선택
+	  -->
+	<template id="select-subject">
+		<div class="select-subject__card item" style="width: 52rem;">
+			<p class="a11y-hidden">그림 주제를 선택해 주세요 <em>9가지 주제중 1가지만 선택 가능 합니다.</em></p>
+			<button v-bind:class="['btn btn--subject btn--subject--' + subject.tit]" v-bind:data-subject="subject.tit" v-on:click="onClickSubjectMe(subject)" type="button">친구</button>
+		</div>
+	</template>
+
+  <!-- // template -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js "></script>
+  <script src="/js/drawingboard/drawingboard.js "></script>
+	<script src="/js/drawingboard/drawingboard.nocontrol.js "></script>
+	<script src="/js/owlCarousel/owl.carousel.min.js"></script>
+  <script src="/js/static-data.js "></script>
+  <script src="/js/util.js "></script>
+  <script src="/js/pub.js "></script>
+</body>
+
+</html>

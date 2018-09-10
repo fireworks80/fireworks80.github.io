@@ -1,0 +1,19 @@
+// ===============================
+// - slick-dot ( gift, select-subject )
+// ===============================
+
+.slick-dots {
+  @include debugger;
+  @include size(null, 1rem);
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    @include size(0.9rem);
+    padding: 0;
+    border: 0;
+    border-radius: 100%;
+    background-color: #e5e5e5;
+    text-indent: -9999em;
+  }
+}

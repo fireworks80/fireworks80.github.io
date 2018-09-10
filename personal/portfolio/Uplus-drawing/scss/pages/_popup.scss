@@ -1,0 +1,313 @@
+//############################
+// variable
+//############################
+$loc: $loc + "popup/";
+
+//############################
+// dim
+//############################
+.dim {
+  @include size(100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+//############################
+// popup
+//############################
+.popup {
+  // @include debugger;
+  @include size($width-max, null);
+  @include box-center;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 40;
+}
+
+//############################
+// pc접속시 alert
+//############################
+.pc-alert {
+  @include size(437px);
+  @include background-image($loc + 'pc-alert.png', $pos: center center, $color: #fff);
+  top: 19.8rem;
+  border-radius: 100%;
+}
+
+//############################
+// 본인인증
+//############################
+
+//──── wrap
+.certification {
+  @include background-image(
+    $loc + "bg-certification-header.png",
+    $color: #f5f5f5
+  );
+  padding: 10rem 0 8rem;
+
+
+  &__tit {
+    // @include debugger;
+    @include size(null, 10.3rem);
+    @include background-image($loc + "tit-ir-certifications.png");
+  }
+
+  &__info {
+    margin-bottom: 10rem;
+    background-position: center top;
+  }
+
+  &__agree1 {
+    margin-bottom: 11.1rem;
+    background-position: center -10.6rem;
+  }
+
+  &__agree2 {
+    margin-bottom: 11.1rem;
+    background-position: center -21rem;
+  }
+
+  //────  form
+  .form {
+    // @include debugger;
+    padding: 0 4rem;
+  }
+
+  //────  row
+  .row {
+    // @include debugger;
+    display: flex;
+    text-align: initial;
+
+    &:nth-of-type(1) {
+      margin-bottom: 2rem;
+    }
+
+    &:nth-of-type(2) {
+      margin-bottom: 4.7rem;
+    }
+  }
+
+  //────  lb
+  .lb {
+    @include background-image($loc + "lb-ir.png", $pos: left top);
+    @include size(12rem, 8rem);
+    display: inline-block;
+    flex: 1 0 12rem;
+
+    &--name {
+      background-position: left 2.7rem;
+    }
+
+    &--phone {
+      background-position: left -7.3rem;
+    }
+  }
+
+  //────  field
+  .field {
+    // @include debugger;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 52rem;
+    padding: 0 2.8rem;
+    border: 1px solid #d6d8e3;
+    border-radius: 1rem;
+    background-color: #fff;
+
+    input {
+      font-size: 2.6rem;
+      color: #373737;
+      border: 0;
+    }
+  }
+
+  //────  동의하기
+  .agree-list {
+    // @include debugger;
+    margin-bottom: 6rem;
+    text-align: initial;
+
+    li {
+      // @include debugger;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:nth-child(1) {
+        margin-bottom: 2rem;
+      }
+
+      &:nth-child(1) label {
+        background-position: 6.6rem 1.4rem;
+      }
+      &:nth-child(2) label {
+        background-position: 6.6rem -6.2rem;
+      }
+    } // li
+
+    input {
+      @include size(0.1rem);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      z-index: -1;
+      clip: rect(0 0 0 0);
+
+      &:checked + label::after {
+        display: block;
+      }
+    } // input
+
+    label {
+      // @include debugger;
+      @include size(42.8rem, 5rem);
+      @include background-image($loc + "txt-agree-ir.png");
+      position: relative;
+      display: inline-block;
+
+      &::before {
+        @include size(5rem);
+        display: inline-block;
+        border: 1px solid #d6d8e3;
+        border-radius: 1.5rem;
+        background-color: #fff;
+        content: "";
+      }
+
+      &::after {
+        @include size(3.8rem, 3rem);
+        @include background-image($loc + "ico-checked.png");
+        position: absolute;
+        top: 50%;
+        left: 0.7rem;
+        transform: translateY(-50%);
+        display: none;
+        content: "";
+      }
+    } // label
+  }
+
+  //────  agree1
+  .agree1 {
+    @include size(null, 36.4rem);
+    @include background-image($loc + 'txt-agree1.png');
+    text-indent: -9999em;
+  }
+
+  //────  agree2
+  .agree2 {
+    @include size(null, 44.4rem);
+    @include background-image($loc + 'txt-agree2.png');
+    text-indent: -9999em;
+  }
+}
+
+//############################
+// 응모 완료
+//############################
+.entry {
+  @include background-image($loc + "bg-entry.png");
+  padding-top: 10.1rem;
+
+  &__tit {
+    // @include debugger;
+    @include size(null, 4.5rem);
+    @include background-image($loc + "tit-entry-ok-ir.png");
+    // @include subject-ir-bg-position($subject-tit, $y: 4.5rem, $x: center);
+    margin-bottom: 3.3rem;
+    text-indent: -9999em;
+  } // tit
+
+  @for $i from 1 through length($subject-tit) {
+    &--#{nth($subject-tit, $i)} .entry__tit {
+      background-position: center (4.4rem * ($i - 1) * -1);
+    }
+  }
+
+  &__desc {
+    @include size(null, 5.7rem);
+    @include background-image($loc + "txt-entry-desc.png");
+    margin-bottom: 5.3rem;
+    text-indent: -9999em;
+  }
+
+  &__card {
+    @include size(60rem, 53rem);
+    @include box-center;
+    @include card(2rem 2rem 5rem rgba(27, 54, 94, 0.3));
+    margin-bottom: 5rem;
+    background: {
+      position: center center;
+      repeat: no-repeat;
+    }
+
+  } // card
+
+  @for $i from 1 through length($subject-tit) {
+    &--#{nth($subject-tit, $i)} .entry__card {
+      background-image: url($loc + "img-entry-#{nth($subject-tit, $i)}.png");
+    } // card
+  } // for
+
+  &__btn-wrap {
+    // @include debugger;
+    @include size(60rem, null);
+    @include box-center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+  }
+
+  &__banner {
+    @include size(null, 19rem);
+    @include background-image($loc + "img-banner.png");
+    display: block;
+    text-indent: -9999em;
+  }
+}
+
+//############################
+// 그림 그리기 alert
+//############################
+.alert {
+  @include size(54rem, null);
+  @include box-center;
+  @include background-image($loc + "bg-alert-drawing.png", $color: #4f88c9);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 11rem;
+  padding-bottom: 5rem;
+  color: #d0e4fb;
+  font-size: 2.1rem;
+  border-radius: 1rem;
+
+  p {
+    // @include debugger;
+    @include size(null, 7rem);
+    @include background-image($loc + "tit-ir-drawing.png");
+    margin-bottom: 3.7rem;
+    text-indent: -9999em;
+  }
+
+  // dd {
+  //   margin-bottom: 4.6rem;
+  //   letter-spacing: -0.03rem;
+  // }
+
+  @for $i from 1 through length($subject-tit) {
+    &--#{nth($subject-tit, $i)} p {
+      background-position: center (7rem * ($i - 1) * -1);
+    }
+  }
+}

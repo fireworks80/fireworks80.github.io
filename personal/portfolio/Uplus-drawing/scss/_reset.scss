@@ -1,0 +1,39 @@
+:root {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+ul,
+dl,
+p,
+figure,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+span,
+img,
+button,
+label,
+input {
+  vertical-align: top;
+}
+
+ul {
+  list-style: none;
+}

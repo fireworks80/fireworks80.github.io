@@ -1,0 +1,43 @@
+// 주제 선택
+// ===============================
+.select-subject {
+  $w: 52rem;
+
+  // @include debugger;
+  @include size($width-max, null);
+  @include box-center;
+  @include background-image($loc + 'bg-select-subject.jpg');
+
+  display: none;
+  padding: 36.7rem 0 7.7rem;
+  text-align: center;
+
+  .owl-stage-outer {
+    margin-bottom: 4rem;
+  }
+
+  &__card {
+    @include size($w, 63.5rem);
+    @include background-image(
+      $loc + 'tit-select-subject.png',
+      $pos: center 4.7rem
+    );
+    @include card(1rem 2.6rem 5rem rgba(74, 115, 171, 0.5));
+
+    // display: inline-block;
+    padding-top: 16.5rem;
+    text-align: center;
+  }
+
+  .owl-dots {
+    @include size(15.4rem, null);
+    @include box-center;
+    padding-bottom: 6.9rem;
+
+    button { background-color: #3f6194; }
+  }
+
+  button.active {
+    background-color: #b6cff4;
+  }
+}

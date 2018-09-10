@@ -1,0 +1,64 @@
+//############################
+// 그림 그리기
+//############################
+.drawing {
+  $w: 68rem;
+
+  @include size($width-max, 128rem);
+  @include background-image($loc + 'bg-draw-pannel.jpg');
+  display: none;
+  padding-top: 6.1rem;
+  padding-bottom: 8rem;
+
+  &__pannel {
+    // @include debugger;
+    @include card(1rem 1rem 5rem rgba(126, 114, 34, 0.3));
+    @include size($w, null);
+    margin: 0 auto 5.9rem;
+    overflow: hidden;
+  }
+
+  &__board {
+    @include size(inherit, 78rem);
+    padding-top: 2.9rem;
+    margin-bottom: 3rem;
+    overflow: hidden;
+    border-bottom: solid #e8eff7;
+  }
+
+  &__desc {
+    @include size($w, 21rem);
+    margin: -3rem auto 0;
+    padding: 4rem;
+    text-align: initial;
+
+    & > span {
+      // @include debugger;
+      @include size(100%, 9.4rem);
+      display: inline-block;
+      margin-bottom: 2.6rem;
+      border: 0;
+      resize: none;
+      font-size: 2.2rem;
+    }
+
+    input {
+      width: 100%;
+      border: 0;
+    }
+
+    em {
+      font-style: normal;
+      font-size: 2rem;
+      color: #587c8e;
+    }
+  } // desc
+
+  &__btns {
+    // @include debugger;
+    @include size(62rem, null);
+    @include box-center;
+    display: flex;
+    justify-content: space-between;
+  }
+}

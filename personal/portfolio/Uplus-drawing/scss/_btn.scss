@@ -1,0 +1,107 @@
+.btn {
+  @include background-image($loc + 'btn-ir.png');
+  display: inline-block;
+  padding: 0;
+  border: 0;
+  border-radius: 5rem;
+  cursor: pointer;
+
+  &--start-draw {
+    @include size(32rem, 9rem);
+  }
+
+  &--selected {
+    @include size(29.1rem, 9.1rem);
+    background-position: left -9.2rem;
+    background-color: #fe0e9b;
+    box-shadow: 3rem 3rem 2rem rgba(74, 115, 171, 0.8);
+  }
+
+  &--subject {
+    $w: 42rem;
+
+    // @include debugger;
+    @include size($w);
+    @include background-image($loc + 'bg-ir-select-subject.png');
+
+    border-radius: 100%;
+    text-indent: -9999em;
+
+    @include subject-ir-bg-position($subject-tit, $y: $w);
+  }
+
+
+
+  //############################
+  // 본인인증
+  //############################
+
+  //────  자세히 보기
+  &--detail {
+    @include size(19.1rem, 5.6rem);
+    background-position: left -46rem;
+  }
+
+  //────  확인
+  &--ok {
+    @include size(29.1rem, 9.1rem);
+    background-position: left -51.8rem;
+  }
+
+  &--close-blue {
+    @include size(3.8rem, 3.7rem);
+    position: absolute;
+    top: 2rem;
+    right: 1.8rem;
+    background-position: left -68.4rem;
+  }
+
+  //############################
+  // 응모완료
+  //############################
+  //────  그림저장
+  &--save-pic {
+    @include size(31.1rem, 9.1rem);
+    background-position: left -27.6rem;
+    background-color: #404040;
+    box-shadow: 3rem 3rem 3rem rgba(27, 54, 94, 0.2)
+  }
+
+  //────  다른 그림 보러가기
+  &--goto-gallery {
+    @include size(27.1rem, 9.1rem);
+    background-position: left -36.8rem;
+    background-color: #fe0e9b;
+    box-shadow: 3rem 3rem 3rem rgba(27, 54, 94, 0.2)
+  }
+
+  &--close-yellow {
+    @include size(3.8rem, 3.7rem);
+    position: absolute;
+    top: 2rem;
+    right: 1.8rem;
+    background-position: -4.3rem -68.4rem;
+  }
+
+  //############################
+  // 그림그리기 alert
+  //############################
+  &--start-draw-alert {
+    @include size(23.3rem, 7.3rem);
+    background-position: left -61rem;
+  }
+
+  &--reSelect {
+    @include size(29rem, 9rem);
+    background-position: left -72.3rem;
+    background-color: #5484cb;
+    box-shadow: 1rem 1rem 2rem rgba(126, 114, 34, .3);
+  }
+
+  &--enter-event {
+    @include size(29.1rem, 9.1rem);
+    background-position: left -18.4rem;
+    background-color: #fe0e9b;
+    box-shadow: 1rem 1rem 2rem rgba(126, 114, 34, .3);
+  }
+}

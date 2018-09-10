@@ -1,3 +1,3 @@
 - [work](/work)
-- [TIL](/TIL)
+<!-- - [TIL](/TIL) -->
 - [번역](/translation)
