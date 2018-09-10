@@ -17,6 +17,7 @@
 - 설명:
     - 개인 인증 후 9가지 주제선택 후 canvas에 그림그린 후 바로 그림 응모하기
     - mobile only
+    - canvas 이미지 저장 시 용량 문제로 인해 그려진 canvas의 반만한 크기의 캔버스에 다시 이미지를 그려서 저장
 ````
 
 [**U+ 이벤트**](https://events.uplus.co.kr/note9_store)
