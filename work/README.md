@@ -5,8 +5,6 @@
 
 ### company
 
-#### 2018
-
 [**U+ 그림그리기 이벤트**](https://events.uplus.co.kr/note9_draw)
 - [source](https://github.com/fireworks80/fireworks80.github.io/tree/master/personal/portfolio/Uplus-drawing)
 
@@ -74,8 +72,6 @@
       매장 리스트를  css텍스트가 아닌 이미지텍스트로 원하여 각 매장 링크를 이미지 맵으로 만들고 언어별 맵 데이터를
       json으로 만들어 이슈 해결
 ````
-
-#### 2017
 
 [**킨더 초콜릿 스포츠**](https://www.kinderchocolate.co.kr/Event/KDS1)
 ````
@@ -226,8 +222,6 @@
     - pc, mobile
     - static event page
 ````
-
-#### 2016
 
 [**크리스 마스 이벤트**](https://www.kinderjoy.co.kr/event/2015-christmas)
 
