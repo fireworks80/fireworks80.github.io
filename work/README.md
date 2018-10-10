@@ -9,8 +9,9 @@
 - [source](https://github.com/fireworks80/fireworks80.github.io/tree/master/personal/portfolio/Uplus-drawing)
 
 ````
-- 사용언어: html, css, javascript, Vue(CDN)
+- 사용언어: html, css, javascript
 - Plugin: drawing board, jquery,
+- JSFramework: Vue(CDN)
 - Api: swagger
 - 설명:
     - 개인 인증 후 9가지 주제선택 후 canvas에 그림그린 후 바로 그림 응모하기
@@ -22,8 +23,9 @@
 - [source](https://github.com/fireworks80/fireworks80.github.io/tree/master/personal/portfolio/Uplus-reservation)
 
 ````
-- 사용언어: html, css, javascript, Vue(CDN)
+- 사용언어: html, css, javascript
 - Plugin: clipboard, jquery,
+- JSFramework: Vue(CDN)
 - Api: swagger
 - 설명:
     - 사용자 정보 입력, 매장찾기 시 주소 검색명으로 해당 검색명에 관련된 내용으로 리스트 다시 보여주기
