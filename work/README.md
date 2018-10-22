@@ -5,14 +5,13 @@
 
 ### company
 
-#### 2018
-
 [**U+ 그림그리기 이벤트**](https://events.uplus.co.kr/note9_draw)
 - [source](https://github.com/fireworks80/fireworks80.github.io/tree/master/personal/portfolio/Uplus-drawing)
 
 ````
-- 사용언어: html, css, javascript, Vue(CDN)
+- 사용언어: html, css, javascript
 - Plugin: drawing board, jquery,
+- JSFramework: Vue(CDN)
 - Api: swagger
 - 설명:
     - 개인 인증 후 9가지 주제선택 후 canvas에 그림그린 후 바로 그림 응모하기
@@ -24,8 +23,9 @@
 - [source](https://github.com/fireworks80/fireworks80.github.io/tree/master/personal/portfolio/Uplus-reservation)
 
 ````
-- 사용언어: html, css, javascript, Vue(CDN)
+- 사용언어: html, css, javascript
 - Plugin: clipboard, jquery,
+- JSFramework: Vue(CDN)
 - Api: swagger
 - 설명:
     - 사용자 정보 입력, 매장찾기 시 주소 검색명으로 해당 검색명에 관련된 내용으로 리스트 다시 보여주기
@@ -74,8 +74,6 @@
       매장 리스트를  css텍스트가 아닌 이미지텍스트로 원하여 각 매장 링크를 이미지 맵으로 만들고 언어별 맵 데이터를
       json으로 만들어 이슈 해결
 ````
-
-#### 2017
 
 [**킨더 초콜릿 스포츠**](https://www.kinderchocolate.co.kr/Event/KDS1)
 ````
@@ -226,8 +224,6 @@
     - pc, mobile
     - static event page
 ````
-
-#### 2016
 
 [**크리스 마스 이벤트**](https://www.kinderjoy.co.kr/event/2015-christmas)
 
