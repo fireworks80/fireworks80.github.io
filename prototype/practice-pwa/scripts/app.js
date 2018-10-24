@@ -51,8 +51,14 @@
     var key = selected.value;
     var label = selected.textContent;
     // TODO init the app.selectedCities array here
+    if (!app.selectedCities) {
+      app.selectedCities = [];
+    } // if
+
     app.getForecast(key, label);
     // TODO push the selected city to the array and save here
+    app.selectedCities.push({key: key, label: label});
+    app.saveSelectedCities();
     app.toggleAddDialog(false);
   });
 
@@ -80,7 +86,7 @@
   // Updates a weather card with the latest weather forecast. If the card
   // doesn't already exist, it's cloned from the template.
   app.updateForecastCard = function(data) {
-    debugger;
+    // debugger;
     var dataLastUpdated = new Date(data.created);
     var sunrise = data.channel.astronomy.sunrise;
     var sunset = data.channel.astronomy.sunset;
@@ -167,6 +173,19 @@
     var url = 'https://query.yahooapis.com/v1/public/yql?format=json&q=' +
         statement;
     // TODO add cache logic here
+    if ('caches' in window) {
+      caches.match(url).then(function(response) {
+        if (response) {
+          response.json().then(function updateFromCache(json) {
+            var results = json.query.results;
+            results.key = key;
+            results.label = label;
+            results.created = json.query.created;
+            app.updateForecastCard(results);
+          });
+        } // if
+      });
+    } // if
 
     // Fetch the latest data.
     var request = new XMLHttpRequest();
@@ -199,7 +218,7 @@
 
   // TODO add saveSelectedCities function here
   app.saveSelectedCities = function() {
-    debugger;
+    // debugger;
     var selectedCities = JSON.stringify(app.selectedCities);
     localStorage.selectedCities = selectedCities;
   };
@@ -329,4 +348,10 @@
   }// if
 
   // TODO add service worker code here
+  if ('serviceWorker' in navigator) {
+      console.log(navigator.serviceWorker);
+    navigator.serviceWorker.register('./service-worker.js').then(function() {
+      console.log('Service Worker Registered');
+    });
+  } // if
 })();
