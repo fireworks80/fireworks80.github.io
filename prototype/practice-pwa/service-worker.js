@@ -1,23 +1,23 @@
 var dataCacheName = 'weatherData-v1';
 var cacheName = 'weatherPWA-step-6-1';
 var filesToCache = [
-'/',
-'/index.html',
-'/scripts/app.js',
-'/styles/inline.css',
-'/images/clear.png',
-'/images/cloudy-scattered-showers.png',
-'/images/cloudy.png',
-'/images/fog.png',
-'/images/ic_add_white_24px.svg',
-'/images/ic_refresh_white_24px.svg',
-'/images/partly-cloudy.png',
-'/images/rain.png',
-'/images/scattered-showers.png',
-'/images/sleet.png',
-'/images/snow.png',
-'/images/thunderstorm.png',
-'/images/wind.png'
+'/prototype/practice-pwa/',
+'/prototype/practice-pwa/index.html',
+'/prototype/practice-pwa/scripts/app.js',
+'/prototype/practice-pwa/styles/inline.css',
+'/prototype/practice-pwa/images/clear.png',
+'/prototype/practice-pwa/images/cloudy-scattered-showers.png',
+'/prototype/practice-pwa/images/cloudy.png',
+'/prototype/practice-pwa/images/fog.png',
+'/prototype/practice-pwa/images/ic_add_white_24px.svg',
+'/prototype/practice-pwa/images/ic_refresh_white_24px.svg',
+'/prototype/practice-pwa/images/partly-cloudy.png',
+'/prototype/practice-pwa/images/rain.png',
+'/prototype/practice-pwa/images/scattered-showers.png',
+'/prototype/practice-pwa/images/sleet.png',
+'/prototype/practice-pwa/images/snow.png',
+'/prototype/practice-pwa/images/thunderstorm.png',
+'/prototype/practice-pwa/images/wind.png'
 ];
 
 self.addEventListener('install', function(e) {
