@@ -5,6 +5,20 @@
 
 ### company
 
+[** 폭스바겐 아테온 마이크로 사이트 **](https://arteon.vwkr.co.kr/studio)
+
+````
+- 사용언어: html, css, javascript
+- Plugin: anime.js, jquery, rangeslider, clipboard.js
+- JSFramework: Vue(CDN)
+- Api: swagger
+- 설명:
+    - 마우스 좌우 드래그 하여 파노라아 이미지 효과 구현
+    - 컬러 박스 클릭시 fade animation 이용하여 색상전환
+    - 이미지 다운로드시 ie에서 여러 이미지 다운로드가 되지 않아 ajax를 이용하여 여러 이미지 다운로드 구현
+    
+````
+
 [**U+ 그림그리기 이벤트**](https://events.uplus.co.kr/note9_draw)
 - [source](https://github.com/fireworks80/fireworks80.github.io/tree/master/personal/portfolio/Uplus-drawing)
 
