@@ -19,7 +19,7 @@
     
 ````
 
-[**U+ 그림그리기 이벤트**](https://events.uplus.co.kr/note9_draw)
+[**U+ 그림그리기 이벤트**](http://fireworks80.dothome.co.kr/uplus/drawing/)
 - [source](https://github.com/fireworks80/fireworks80.github.io/tree/master/personal/portfolio/Uplus-drawing)
 
 ````
