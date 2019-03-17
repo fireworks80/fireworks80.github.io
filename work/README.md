@@ -285,7 +285,7 @@
 
 **newsletter generator**
 - [github](https://github.com/fireworks80/newsletter/tree/master)
-- [link](http://fireworks80.dothome.co.kr/newsLetter/)
+- [link](http://fireworks80.github.io/personal/rwd/lincoln)
 
 ````
 - 사용언어: html, css, javascript, php
@@ -304,3 +304,10 @@
     - 그누보드를 사용하여 제작한 사이트
 ````
 
+### 반응형
+
+반응형 포트폴리오 개인 작업
+
+**링컨자동차 코리아 technology**
+- [github](https://github.com/fireworks80/newsletter/tree/master)
+- [link](http://fireworks80.dothome.co.kr/newsLetter/)
