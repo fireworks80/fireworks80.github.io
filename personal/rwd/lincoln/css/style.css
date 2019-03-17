@@ -715,6 +715,10 @@ body.on {
     width: auto;
     margin-bottom: 15px;
   }
+
+  .credit__item:nth-child(n + 2) {
+    margin-left: 0;
+  }
 }
 
 /* ===================================== footer =====================================  */
