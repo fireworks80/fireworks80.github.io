@@ -61,6 +61,13 @@
     - countdown.js에서 time.js유틸을 이용해 페이지 새로고침시 처음 부터 시작하는 이슈 해결
 ````
 
+[**연락처 관리 앱**](https://github.com/fireworks80/quick-start-vue/tree/contactapp-vuex)
+
+````
+- vuex, vue-router, axios
+- quick start vue event-bus를 이용한 연락처 관리앱 예제를 vuex, vue-router로 변경
+````
+
 ## animation
 
 [**Kinder crispy event**](http://test.www.kinderschoko-bonscrispy.co.kr/event/ksbc-launching)
