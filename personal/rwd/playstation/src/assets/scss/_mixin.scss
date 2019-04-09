@@ -1,0 +1,44 @@
+@mixin debug($color: red) {
+  outline: 1px dashed $color;
+}
+
+@mixin position($type, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $type;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin absolute($args...) {
+  @include position(absolute, $args...);
+}
+
+@mixin relative($args...) {
+  @include position(relative, $args...);
+}
+
+@mixin fixed($args...) {
+  @include position(fixed, $args...);
+}
+
+@mixin size($w: null, $h: null) {
+  width: $w;
+  height: $h;
+}
+
+@mixin clearfix() {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin a11y() {
+  @include absolute;
+  @include size(1px);
+  overflow: hidden;
+  font-size: 1px;
+  opacity: 0;
+}
