@@ -3,7 +3,6 @@
 
 ## Work
 
-
 ### Vue
 
 [** 폭스바겐 아테온 마이크로 사이트 **](https://arteon.vwkr.co.kr/studio)
