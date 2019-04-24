@@ -5,7 +5,9 @@
 
 ### Vue
 
-[**playstation store 반응형**](https://github.com/fireworks80/playstation-vue-cli)
+[**playstation store 반응형**]
+
+- [source](https://github.com/fireworks80/playstation-vue-cli)
 ````
 - 사용언어: html, scss, javascript
 - Library: axios, json-server
