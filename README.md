@@ -5,6 +5,17 @@
 
 ### Vue
 
+[**playstation store 반응형**](https://github.com/fireworks80/playstation-vue-cli)
+````
+- 사용언어: html, scss, javascript
+- Library: axios, json-server
+- JSFramework: Vue(CLI), vuex
+- 설명:
+    - 기존의 플레이스테이션 스토어 반응형으로 변경
+    - vuex를 이용하여 제품상태 관리
+    - 위시리스트 담은 후 위시리스트 페이지 전환이 아닌 모달팝업으로 위시리스트 상태 파악 되도록 변경
+````
+
 [**폭스바겐 아테온 마이크로 사이트**](https://arteon.vwkr.co.kr/studio)
 
 ````
