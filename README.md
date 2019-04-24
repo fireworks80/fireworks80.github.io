@@ -9,9 +9,7 @@
 
 - [source](https://github.com/fireworks80/playstation-vue-cli)
 ````
-- 사용언어: html, scss, javascript
-- Library: axios, json-server
-- JSFramework: Vue(CLI), vuex
+- 사용언어: html, scss, javascript, Vue(CLI), vuex, axios, json-server
 - 설명:
     - 기존의 플레이스테이션 스토어 반응형으로 변경
     - vuex를 이용하여 제품상태 관리
