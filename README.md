@@ -8,6 +8,7 @@
 [**playstation store 반응형**]
 
 - [source](https://github.com/fireworks80/playstation-vue-cli)
+
 ````
 - 사용언어: html, scss, javascript, Vue(CLI), vuex, axios, json-server
 - 설명:
