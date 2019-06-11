@@ -46,20 +46,6 @@
     - canvas 이미지 저장 시 용량 문제로 인해 그려진 canvas의 반만한 크기의 캔버스에 다시 이미지를 그려서 저장
 ````
 
-[**샘소나이트 이벤트 카운트다운 효과 작업**](/personal/portfolio/countdown/)
-- [source](https://github.com/fireworks80/fireworks80.github.io/tree/master/personal/portfolio/countdown)
-
-````
-- 사용언어: html, css, javascript
-- Plugin: jquery, jquery.counter
-- 설명:
-    - 샘소나이트 이벤트 페이지 작업 중 d-day기능 요망
-    - jquery.counter 플러그인으로 카운트 다운 효과 적용
-    - 페이지 새로고침시 현재 시간에서 시작하지 않는 이슈로 인해
-    - time.js util을 만들어 expired 시간과 현재시간 차이를 구함
-    - countdown.js에서 time.js유틸을 이용해 페이지 새로고침시 처음 부터 시작하는 이슈 해결
-````
-
 [**연락처 관리 앱**](https://github.com/fireworks80/quick-start-vue/tree/contactapp-vuex)
 
 ````
