@@ -5,6 +5,16 @@
 
 ### Vue
 
+[**Vue animation pate clone**]
+![screenshot](./imgs/vue-artist-clone.gif)
+- [source](https://github.com/fireworks80/artist-animation-vue-clone)
+
+````
+- 사용언어: vue cli, scss
+- 설명: vue router를 이용하여 페이지 전환시 에니메이션 효과
+       이전 화면으로 돌아갈때 확대이미지가 원래 위치로 돌아가는 효과
+````
+
 [**playstation store 반응형**]
 
 - [source](https://github.com/fireworks80/playstation-vue-cli)
