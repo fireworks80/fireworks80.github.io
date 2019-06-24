@@ -28,6 +28,7 @@
 ````
 
 [**폭스바겐 아테온 마이크로 사이트**](https://arteon.vwkr.co.kr/studio)
+![screenshot](./imgs/arteon.gif)
 
 ````
 - 사용언어: html, css, javascript
