@@ -57,6 +57,15 @@
     - canvas 이미지 저장 시 용량 문제로 인해 그려진 canvas의 반만한 크기의 캔버스에 다시 이미지를 그려서 저장
 ````
 
+[**todo**]
+- [source](https://github.com/fireworks80/vue-cli-todo-vuex)
+````
+- 사용언어: vue-cli, vuex, express, node.js, html, scss
+- 설명: session을 이용한 login / logout 구현
+       file  read/write을 이용한 데이터 입출력
+       XMLHttpRequest를 이용한 api 구현
+````
+
 [**연락처 관리 앱**](https://github.com/fireworks80/quick-start-vue/tree/contactapp-vuex)
 
 ````
