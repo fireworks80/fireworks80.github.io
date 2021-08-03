@@ -91,13 +91,4 @@
 - 설명: 개인 반응형 포트폴리오
 ````
 
-**casabatllo**
-- [github](https://github.com/fireworks80/casabatllo-response)
-- [link](http://fireworks80.dothome.co.kr/portfolio/casabatllo-response/)
-
-````
-- 사용언어: html, css
-- 모듈번들러: webpack
-- 설명: 개인 반응형 포트폴리오
-````
 
